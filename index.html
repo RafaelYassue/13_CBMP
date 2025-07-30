@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Do Pixel à Informação: Como a Fenotipagem de Alto Rendimento Pode Aumentar o Ganho Genético</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rafael Massahiro Yassue" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="animate.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Do Pixel à Informação: Como a Fenotipagem de Alto Rendimento Pode Aumentar o Ganho Genético
+]
+.author[
+### Rafael Massahiro Yassue
+]
+.institute[
+### GDM Seeds
+]
+.date[
+### 03 de setembro de 2025
+]
+
+---
+
+class: animated, fadeIn
+
+# Summary
++ Introdução 
+  + Breeding Equations
+  + Novas ferramentas para ganho genético
++ Phenomics vs Genomics
+  + Comparação de abordagens
+  + Integração de dados fenotípicos e genômicos
++ Estudo de caso: Phenomics aplicado no estudo da interação genótipo e bactérias promotoras de crescimento de plantas
+  + RGB 
+  + Shovelomics
+  + Structure from motion
+  + Hiperspectral
+  + Thermal
++ Aplicações e Limitações 
+
+---
+## pt02
++ How to process data
+  + Background removing
+  + Structure from motion
+  + Forms, shapes and angles 
++ How to Analyse data
+  + Cross-validation: Careful with Simpsons effect! 
+  + Hyperparameter tunning
+  + Multi-omics prediction: Kernel, Image, Convolution
+  + Multi-trait Multi-Enviroment Multi-omics model -&gt; MegaLMM? 
++ How to use this data on a Plant breeding program
+  + Modelling:
+  + Predicao de yield, matuirty, lodging, doenca,
+  + Shovelomics
+  + PheWAS (Phenome-Wide Association Studies) 
+  + Phenomics vs Genomics selection
++ How to use this data on other studies...
+  + PGPB
+  + Desiases detection 
+
+---
+## pt03
+ + From pixel to knowledge: how high-throughput phenotyping helps to dissect the genetic architecture and improves predictive ability in maize under inoculation with plant growth-promoting bacteria
+
+---
+## pt04
+ + Thermal processing
+ + Naive Bayesian for image segmentation 
+ 
+---
+class: animated, fadeIn
+# What is High-Throughput Plant Phenotyping (HTP)?
+
+&lt;div style="transform: scale(1); transform-origin: top center;"&gt;
+
+| Traditional Phenotyping       | HTP Definition                 | Impact on a breeding program   |
+|:------------------------------|:-------------------------------|:-------------------------------|
+| Manual trait measurement      | Automated data acquisition     | Higher accuracy?               |
+| Low temporal resolution       | High-dimensional traits        | More data?                     | 
+| Subjective scoring            | Temporal-spatial resolution    | More computational resources?  |
+| Limited trait diversity       | Integrates sensors + analytics | What is the important traits?  |
+
+
+---
+class: small, animated, fadeIn
+
+#  Available Sensors
+
+&lt;div style="transform: scale(0.65); transform-origin: top center;"&gt;
+
+| Sensor Type                          | HTP Definition                                      | Impact on a Breeding Program                               |
+| :----------------------------------- | :-------------------------------------------------- | :--------------------------------------------------------- |
+| RGB Cameras                          | Captures color images of canopy and morphology      | Inexpensive tracking of growth, size, and color traits     |
+| Multispectral Sensors                | Reflectance in selected bands (e.g., NIR, red edge) | Enables vegetation indices (e.g., NDVI) for stress mapping |
+| Hyperspectral Sensors                | Hundreds of narrow spectral bands                   | Detects biochemical traits; high data, high cost           |
+| NIR Sensors                          | Measures reflectance in near-infrared spectrum      | Determines plant health and moisture content               |
+| Thermal Cameras                      | Measures canopy temperature                         | Informs on drought tolerance and transpiration efficiency  |
+| LiDAR                                | 3D laser scanning for structural data               | Accurate estimation of biomass and canopy architecture     |
+| Depth Sensors (ToF/Structured Light) | Captures low-cost 3D structure indoors              | Affordable solution for height/volume in greenhouses       |
+| Chlorophyll Fluorescence             | Measures photosystem efficiency                     | Detects early stress, useful for screening genotypes       |
+| SPAD Meter                           | Handheld chlorophyll estimator                      | Quick, point-based N content measurement                   |
+| Root Imaging Systems                 | X-ray CT, MRI, minirhizotron systems                | Enables root trait selection; limited to lab settings      |
+
+---
+class: animated, fadeIn
+
+# Available Sensor Platforms
+
+&lt;div style="transform: scale(0.85); transform-origin: top center;"&gt;
+
+| Platform Type             | Sub-Category                    | Description                                             |
+| :------------------------ | :------------------------------ | :------------------------------------------------------ |
+| **Indoors**               | Fixed                            | Stationary sensors used in controlled environments      |
+|                           | Moved                            | Mobile sensors within indoor settings (e.g., robots)    |
+| **Outdoors**              | UAV (Unmanned Aerial Vehicles)  | Drones capturing multispectral, hyperspectral, RGB data |
+|                           | Rovers                           | Ground robots equipped with sensors for phenotyping     |
+|                           | Satellites                       | Remote sensing for large-scale data collection          |
+| **Low-cost HTP Phenotyping** |                                | Budget-friendly technologies for high-throughput phenotyping (e.g., simple cameras, handheld devices) |
+
+---
+
+&lt;div style="position: absolute; bottom: 20px; right: 20px; font-size: 10px; color: gray;"&gt;
+  Reference: 10.1016/j.molp.2020.01.008
+&lt;/div&gt;
+ 
+---
+class: animated, fadeIn
+
+# Factors Impacting HTP Accuracy
+
+&lt;div style="transform: scale(0.85); transform-origin: top center;"&gt;
+
+| Factor                         | Description                                             |
+| :----------------------------- | :------------------------------------------------------ |
+| **Sensor Quality**             | Higher resolution sensors capture more detailed data    |
+| **Environmental Conditions**   | Weather, lighting, and temperature variations affect accuracy |
+| **Plant Phenotypic Diversity** | Greater genetic variability in plants can lead to more complex measurements |
+| **Data Processing**            | Quality of data filtering, normalization, and analysis algorithms |
+| **Calibration**                | Proper sensor calibration ensures consistency and reduces error |
+| **Sampling Density**           | More frequent sampling improves temporal resolution     |
+| **Data Fusion**                | Combining multiple sensor types increases accuracy in detecting traits |
+| **Platform Stability**         | Fixed platforms (e.g., sensors on stationary equipment) offer more reliable data |
+| **User Expertise**             | Knowledge of sensor operation and data interpretation affects result reliability |
+
+
+
+---
+class: animated, fadeIn
+
+# Current Challenges
+
+&lt;div style="transform: scale(0.70); transform-origin: top left; overflow: auto;width: 150%; height: 100%"&gt;
+
+| Challenge Type   | Technical Challenges                               | Biological Challenges                      |
+| :--------------- | :------------------------------------------------ | :----------------------------------------- |
+| **High Costs**   | High equipment costs, especially for advanced sensors | Increasing the affordability of sensors for broader use |
+| **Data Storage** | Large volumes of data requiring significant storage and processing power | Translating data into actionable insights for plant breeding |
+| **Calibration**  | Sensor calibration challenges due to environmental variables | Standardizing biological traits across diverse plant species |
+| **Accuracy**     | Variability in sensor performance under different environmental conditions | Biological variability across plant species can affect data consistency |
+| **Data Integration** | Challenges in integrating data from multiple sensor types | Integrating phenotypic data with genetic data for better predictions |
+| **Real-time Analysis** | Need for real-time processing of high volumes of data | The complexity of analyzing dynamic biological processes in real-time |
+| **Platform Limitations** | Restrictions in platform mobility and accessibility | Adaptation of phenotyping methods to different crop types and growth stages |
+| **Scalability**  | Scaling up HTP systems for large areas or multiple species | Ensuring biological relevance at a large scale in diverse ecosystems |
+| **Breeding integration**  | define breeding strategies for mid-correlation with the target trait |
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

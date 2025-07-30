@@ -1,0 +1,161 @@
+---
+title: "Do Pixel à Informação: Como a Fenotipagem de Alto Rendimento Pode Aumentar o Ganho Genético"
+author:  
+ - Rafael Massahiro Yassue
+institute: "GDM Seeds"
+date: "03 de setembro de 2025"
+
+header-includes:
+  - \usepackage{booktabs}
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css:
+      - default
+      - default-fonts 
+      - animate.css
+---
+class: animated, fadeIn
+
+# Summary
++ Introdução 
+  + Breeding Equations
+  + Novas ferramentas para ganho genético
++ Phenomics vs Genomics
+  + Comparação de abordagens
+  + Integração de dados fenotípicos e genômicos
++ Estudo de caso: Phenomics aplicado no estudo da interação genótipo e bactérias promotoras de crescimento de plantas
+  + RGB 
+  + Shovelomics
+  + Structure from motion
+  + Hiperspectral
+  + Thermal
++ Aplicações e Limitações 
+
+---
+## pt02
++ How to process data
+  + Background removing
+  + Structure from motion
+  + Forms, shapes and angles 
++ How to Analyse data
+  + Cross-validation: Careful with Simpsons effect! 
+  + Hyperparameter tunning
+  + Multi-omics prediction: Kernel, Image, Convolution
+  + Multi-trait Multi-Enviroment Multi-omics model -> MegaLMM? 
++ How to use this data on a Plant breeding program
+  + Modelling:
+  + Predicao de yield, matuirty, lodging, doenca,
+  + Shovelomics
+  + PheWAS (Phenome-Wide Association Studies) 
+  + Phenomics vs Genomics selection
++ How to use this data on other studies...
+  + PGPB
+  + Desiases detection 
+
+---
+## pt03
+ + From pixel to knowledge: how high-throughput phenotyping helps to dissect the genetic architecture and improves predictive ability in maize under inoculation with plant growth-promoting bacteria
+
+---
+## pt04
+ + Thermal processing
+ + Naive Bayesian for image segmentation 
+ 
+---
+class: animated, fadeIn
+# What is High-Throughput Plant Phenotyping (HTP)?
+
+<div style="transform: scale(1); transform-origin: top center;">
+
+| Traditional Phenotyping       | HTP Definition                 | Impact on a breeding program   |
+|:------------------------------|:-------------------------------|:-------------------------------|
+| Manual trait measurement      | Automated data acquisition     | Higher accuracy?               |
+| Low temporal resolution       | High-dimensional traits        | More data?                     | 
+| Subjective scoring            | Temporal-spatial resolution    | More computational resources?  |
+| Limited trait diversity       | Integrates sensors + analytics | What is the important traits?  |
+
+
+---
+class: small, animated, fadeIn
+
+#  Available Sensors
+
+<div style="transform: scale(0.65); transform-origin: top center;">
+
+| Sensor Type                          | HTP Definition                                      | Impact on a Breeding Program                               |
+| :----------------------------------- | :-------------------------------------------------- | :--------------------------------------------------------- |
+| RGB Cameras                          | Captures color images of canopy and morphology      | Inexpensive tracking of growth, size, and color traits     |
+| Multispectral Sensors                | Reflectance in selected bands (e.g., NIR, red edge) | Enables vegetation indices (e.g., NDVI) for stress mapping |
+| Hyperspectral Sensors                | Hundreds of narrow spectral bands                   | Detects biochemical traits; high data, high cost           |
+| NIR Sensors                          | Measures reflectance in near-infrared spectrum      | Determines plant health and moisture content               |
+| Thermal Cameras                      | Measures canopy temperature                         | Informs on drought tolerance and transpiration efficiency  |
+| LiDAR                                | 3D laser scanning for structural data               | Accurate estimation of biomass and canopy architecture     |
+| Depth Sensors (ToF/Structured Light) | Captures low-cost 3D structure indoors              | Affordable solution for height/volume in greenhouses       |
+| Chlorophyll Fluorescence             | Measures photosystem efficiency                     | Detects early stress, useful for screening genotypes       |
+| SPAD Meter                           | Handheld chlorophyll estimator                      | Quick, point-based N content measurement                   |
+| Root Imaging Systems                 | X-ray CT, MRI, minirhizotron systems                | Enables root trait selection; limited to lab settings      |
+
+---
+class: animated, fadeIn
+
+# Available Sensor Platforms
+
+<div style="transform: scale(0.85); transform-origin: top center;">
+
+| Platform Type             | Sub-Category                    | Description                                             |
+| :------------------------ | :------------------------------ | :------------------------------------------------------ |
+| **Indoors**               | Fixed                            | Stationary sensors used in controlled environments      |
+|                           | Moved                            | Mobile sensors within indoor settings (e.g., robots)    |
+| **Outdoors**              | UAV (Unmanned Aerial Vehicles)  | Drones capturing multispectral, hyperspectral, RGB data |
+|                           | Rovers                           | Ground robots equipped with sensors for phenotyping     |
+|                           | Satellites                       | Remote sensing for large-scale data collection          |
+| **Low-cost HTP Phenotyping** |                                | Budget-friendly technologies for high-throughput phenotyping (e.g., simple cameras, handheld devices) |
+
+---
+
+<div style="position: absolute; bottom: 20px; right: 20px; font-size: 10px; color: gray;">
+  Reference: 10.1016/j.molp.2020.01.008
+</div>
+ 
+---
+class: animated, fadeIn
+
+# Factors Impacting HTP Accuracy
+
+<div style="transform: scale(0.85); transform-origin: top center;">
+
+| Factor                         | Description                                             |
+| :----------------------------- | :------------------------------------------------------ |
+| **Sensor Quality**             | Higher resolution sensors capture more detailed data    |
+| **Environmental Conditions**   | Weather, lighting, and temperature variations affect accuracy |
+| **Plant Phenotypic Diversity** | Greater genetic variability in plants can lead to more complex measurements |
+| **Data Processing**            | Quality of data filtering, normalization, and analysis algorithms |
+| **Calibration**                | Proper sensor calibration ensures consistency and reduces error |
+| **Sampling Density**           | More frequent sampling improves temporal resolution     |
+| **Data Fusion**                | Combining multiple sensor types increases accuracy in detecting traits |
+| **Platform Stability**         | Fixed platforms (e.g., sensors on stationary equipment) offer more reliable data |
+| **User Expertise**             | Knowledge of sensor operation and data interpretation affects result reliability |
+
+
+
+---
+class: animated, fadeIn
+
+# Current Challenges
+
+<div style="transform: scale(0.70); transform-origin: top left; overflow: auto;width: 150%; height: 100%">
+
+| Challenge Type   | Technical Challenges                               | Biological Challenges                      |
+| :--------------- | :------------------------------------------------ | :----------------------------------------- |
+| **High Costs**   | High equipment costs, especially for advanced sensors | Increasing the affordability of sensors for broader use |
+| **Data Storage** | Large volumes of data requiring significant storage and processing power | Translating data into actionable insights for plant breeding |
+| **Calibration**  | Sensor calibration challenges due to environmental variables | Standardizing biological traits across diverse plant species |
+| **Accuracy**     | Variability in sensor performance under different environmental conditions | Biological variability across plant species can affect data consistency |
+| **Data Integration** | Challenges in integrating data from multiple sensor types | Integrating phenotypic data with genetic data for better predictions |
+| **Real-time Analysis** | Need for real-time processing of high volumes of data | The complexity of analyzing dynamic biological processes in real-time |
+| **Platform Limitations** | Restrictions in platform mobility and accessibility | Adaptation of phenotyping methods to different crop types and growth stages |
+| **Scalability**  | Scaling up HTP systems for large areas or multiple species | Ensuring biological relevance at a large scale in diverse ecosystems |
+| **Breeding integration**  | define breeding strategies for mid-correlation with the target trait |
+
+
