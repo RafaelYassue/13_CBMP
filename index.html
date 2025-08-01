@@ -37,102 +37,19 @@ class: animated, fadeIn
 + Phenomics vs Genomics
   + Comparação de abordagens
   + Integração de dados fenotípicos e genômicos
-+ Estudo de caso: Phenomics aplicado no estudo da interação genótipo e bactérias promotoras de crescimento de plantas
-  + RGB 
-  + Shovelomics
-  + Structure from motion
-  + Hiperspectral
-  + Thermal
++ Estudo de Caso: Integrando Genômica e Fenotipagem de Alto Rendimento na Interação Genótipo × Bactérias Promotoras de Crescimento
+  - Plataforma de baixo custo para coleta de imagens em ambiente interno
+  + *Shovelomics*
+  + Reconstrução 3D a partir de imagens (*Structure from Motion*)
+  + Câmera Multispectral 
+  + Câmera Hiperspectral
+  + Câmera térmica
 + Aplicações e Limitações 
 
 ---
-## pt02
-+ How to process data
-  + Background removing
-  + Structure from motion
-  + Forms, shapes and angles 
-+ How to Analyse data
-  + Cross-validation: Careful with Simpsons effect! 
-  + Hyperparameter tunning
-  + Multi-omics prediction: Kernel, Image, Convolution
-  + Multi-trait Multi-Enviroment Multi-omics model -&gt; MegaLMM? 
-+ How to use this data on a Plant breeding program
-  + Modelling:
-  + Predicao de yield, matuirty, lodging, doenca,
-  + Shovelomics
-  + PheWAS (Phenome-Wide Association Studies) 
-  + Phenomics vs Genomics selection
-+ How to use this data on other studies...
-  + PGPB
-  + Desiases detection 
-
----
-## pt03
- + From pixel to knowledge: how high-throughput phenotyping helps to dissect the genetic architecture and improves predictive ability in maize under inoculation with plant growth-promoting bacteria
-
----
-## pt04
- + Thermal processing
- + Naive Bayesian for image segmentation 
- 
----
-class: animated, fadeIn
-# What is High-Throughput Plant Phenotyping (HTP)?
-
-&lt;div style="transform: scale(1); transform-origin: top center;"&gt;
-
-| Traditional Phenotyping       | HTP Definition                 | Impact on a breeding program   |
-|:------------------------------|:-------------------------------|:-------------------------------|
-| Manual trait measurement      | Automated data acquisition     | Higher accuracy?               |
-| Low temporal resolution       | High-dimensional traits        | More data?                     | 
-| Subjective scoring            | Temporal-spatial resolution    | More computational resources?  |
-| Limited trait diversity       | Integrates sensors + analytics | What is the important traits?  |
-
-
----
-class: small, animated, fadeIn
-
-#  Available Sensors
-
-&lt;div style="transform: scale(0.65); transform-origin: top center;"&gt;
-
-| Sensor Type                          | HTP Definition                                      | Impact on a Breeding Program                               |
-| :----------------------------------- | :-------------------------------------------------- | :--------------------------------------------------------- |
-| RGB Cameras                          | Captures color images of canopy and morphology      | Inexpensive tracking of growth, size, and color traits     |
-| Multispectral Sensors                | Reflectance in selected bands (e.g., NIR, red edge) | Enables vegetation indices (e.g., NDVI) for stress mapping |
-| Hyperspectral Sensors                | Hundreds of narrow spectral bands                   | Detects biochemical traits; high data, high cost           |
-| NIR Sensors                          | Measures reflectance in near-infrared spectrum      | Determines plant health and moisture content               |
-| Thermal Cameras                      | Measures canopy temperature                         | Informs on drought tolerance and transpiration efficiency  |
-| LiDAR                                | 3D laser scanning for structural data               | Accurate estimation of biomass and canopy architecture     |
-| Depth Sensors (ToF/Structured Light) | Captures low-cost 3D structure indoors              | Affordable solution for height/volume in greenhouses       |
-| Chlorophyll Fluorescence             | Measures photosystem efficiency                     | Detects early stress, useful for screening genotypes       |
-| SPAD Meter                           | Handheld chlorophyll estimator                      | Quick, point-based N content measurement                   |
-| Root Imaging Systems                 | X-ray CT, MRI, minirhizotron systems                | Enables root trait selection; limited to lab settings      |
-
----
 class: animated, fadeIn
 
-# Available Sensor Platforms
-
-&lt;div style="transform: scale(0.85); transform-origin: top center;"&gt;
-
-| Platform Type             | Sub-Category                    | Description                                             |
-| :------------------------ | :------------------------------ | :------------------------------------------------------ |
-| **Indoors**               | Fixed                            | Stationary sensors used in controlled environments      |
-|                           | Moved                            | Mobile sensors within indoor settings (e.g., robots)    |
-| **Outdoors**              | UAV (Unmanned Aerial Vehicles)  | Drones capturing multispectral, hyperspectral, RGB data |
-|                           | Rovers                           | Ground robots equipped with sensors for phenotyping     |
-|                           | Satellites                       | Remote sensing for large-scale data collection          |
-| **Low-cost HTP Phenotyping** |                                | Budget-friendly technologies for high-throughput phenotyping (e.g., simple cameras, handheld devices) |
-
----
-
-&lt;div style="position: absolute; bottom: 20px; right: 20px; font-size: 10px; color: gray;"&gt;
-  Reference: 10.1016/j.molp.2020.01.008
-&lt;/div&gt;
- 
----
-class: animated, fadeIn
+&lt;img src="figs/" width="120%" style="display: block; margin: auto;" /&gt;
 
 # Factors Impacting HTP Accuracy
 
@@ -149,6 +66,14 @@ class: animated, fadeIn
 | **Data Fusion**                | Combining multiple sensor types increases accuracy in detecting traits |
 | **Platform Stability**         | Fixed platforms (e.g., sensors on stationary equipment) offer more reliable data |
 | **User Expertise**             | Knowledge of sensor operation and data interpretation affects result reliability |
+
+
+---
+class: animated, fadeIn
+
+# Thermal + RGB data collection
+
+&lt;img src="figs/RGB_colection.gif" width="50%" /&gt;&lt;img src="figs/thermal_coletion.gif" width="50%" /&gt;
 
 
 
