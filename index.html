@@ -46,56 +46,286 @@ class: animated, fadeIn
   + Câmera térmica
 + Aplicações e Limitações 
 
----
-class: animated, fadeIn
-
-&lt;img src="figs/" width="120%" style="display: block; margin: auto;" /&gt;
-
-# Factors Impacting HTP Accuracy
-
-&lt;div style="transform: scale(0.85); transform-origin: top center;"&gt;
-
-| Factor                         | Description                                             |
-| :----------------------------- | :------------------------------------------------------ |
-| **Sensor Quality**             | Higher resolution sensors capture more detailed data    |
-| **Environmental Conditions**   | Weather, lighting, and temperature variations affect accuracy |
-| **Plant Phenotypic Diversity** | Greater genetic variability in plants can lead to more complex measurements |
-| **Data Processing**            | Quality of data filtering, normalization, and analysis algorithms |
-| **Calibration**                | Proper sensor calibration ensures consistency and reduces error |
-| **Sampling Density**           | More frequent sampling improves temporal resolution     |
-| **Data Fusion**                | Combining multiple sensor types increases accuracy in detecting traits |
-| **Platform Stability**         | Fixed platforms (e.g., sensors on stationary equipment) offer more reliable data |
-| **User Expertise**             | Knowledge of sensor operation and data interpretation affects result reliability |
-
 
 ---
 class: animated, fadeIn
+# Influência da Fenômica sobre os Componentes do Ganho Genético
 
-# Thermal + RGB data collection
+$$
+\Delta G = \frac{i \cdot \color{red}{r_a} \cdot \color{red}{\sigma_a}}{L}
+$$
+
+`\begin{aligned}
+\Delta G &amp; : \text{ganho genético por ciclo de seleção} \\
+i        &amp; : \text{intensidade de seleção} \\
+\color{red}{r_a} &amp; : \text{acurácia da seleção (melhorada com fenotipagem de alto rendimento)} \\
+\color{red}{\sigma_a} &amp; : \text{desvio-padrão genético aditivo} \\
+L        &amp; : \text{duração do ciclo de seleção (anos)}
+\end{aligned}`
+
+--
+
+&lt;div style="transform: scale(0.75); transform-origin: top center;"&gt;
+
+| **Como a Fenômica Aumenta ganho Genético** | **Efeito no Ganho Genético** |
+| :---------------------------------------------- | :--------------------------- |
+| Reduz o erro experimental                        | ↑ Herdabilidade → ↑ Acurácia |
+| Permite medições temporais repetidas             | ↑ Precisão das estimativas   |
+| Captura traits secundários correlacionados       | ↑ Correlação genótipo-fenótipo |
+| Aumenta o número de plantas avaliadas            | ↑ Robustez estatística e ↑ variância genética      |
+
+---
+# Potencial Redução de Custo
+
+- **Investimento inicial alto** em sensores e infraestrutura
+
+--
+
+- **Plataformas de baixo custo** permitem coleta em larga escala
+
+--
+
+- **&lt;span style="color:red; font-weight:bold;"&gt;Custo por dado cai drasticamente com o aumento da escala!&lt;/span&gt;**
+
+--
+
+- **Automação** reduz custos de mão de obra 
+
+--
+
+- **Não possui custo de reagentes**  
+
+
+---
+class: center, middle, inverse
+
+# Estudo de Caso: Integrando Genômica e Fenotipagem de Alto Rendimento na Interação Genótipo × Bactérias Promotoras de Crescimento
+
+
+---
+class: animated, fadeIn
+
+# Por que usar Fenotipagem de Alto Rendimento?
+&lt;img src="figs/HTP.png" width="95%" style="display: block; margin: auto;" /&gt;
+---
+
+class: animated, fadeIn
+
+# Uma plataforma de fenotipagem de alto rendimento em estufa de baixo custo
+
+&lt;img src="figs/Screen Shot 2022-01-05 at 7.54.52 PM.png" width="75%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Representação da plataforma de Fenotipagem de Alto Rendimento de baixo custo.
+&lt;/p&gt;
+
+
+---
+class: animated, fadeIn
+
+# Coleta de Imagens Termais e Multiespectrais
 
 &lt;img src="figs/RGB_colection.gif" width="50%" /&gt;&lt;img src="figs/thermal_coletion.gif" width="50%" /&gt;
 
+---
+class: animated, fadeIn
+
+# Aquisição de Dados
+
+&lt;img src="figs/HTP/fig01.png" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figure. Design of the greenhouse-based high-throughput phenotyping platform.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+# Aquisição de Imagens Hiperespectrais
+
+&lt;img src="figs/fig01_da.png" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Resumo da aquisição e processamento de dados. A) câmera hiperespectral de bancada usada para coleta de dados; B) região de interesse da última folha expandida; C) imagem em cubo; e D) máscara da imagem.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+
+# Data processing 
+&lt;img src="figs/fig02.png" width="75%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Resumo do processamento de imagens multiespectrais. (A) aquisição de imagens; (B) montagem do ortomosaico; (C) recorte das parcelas; (D) cobertura do dossel (CC); (E) nuvem de pontos densa; (F) a altura das plantas (PH) foi calculada com base nas diferenças entre a nuvem de pontos densa com as plantas e a nuvem de pontos densa apenas com o vaso; (G) nuvem de pontos densa após aplicação do filtro para remover o fundo; (H) nuvem de pontos densa para cada parcela; (I) reconstrução 3D da nuvem de pontos densa para obtenção do volume do dossel; e (J) f(biomassa) obtida pelo produto da altura da planta (PH) e CC.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+
+# Shovelomics 
+
+&lt;img src="figs/molbreed.png" width="120%" style="display: block; margin: auto;" /&gt;
+---
+class: animated, fadeIn
+# Multi-phenotype Genomic prediction
+&lt;img src="figs/mol_1.png" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Predição genômica usando GBLUP, GBLUP_GMS (GBLUP baseado na seleção de marcadores via GWAS) e GBLUP_MAS (GBLUP + seleção assistida por marcadores) para diversos traits e manejos.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+&lt;img src="figs/TPPJ.png" width="120%" style="display: block; margin: auto;" /&gt;
+
+---
+# Crescimento de Plantas
+&lt;img src="figs/PG.png" width="65%" style="display: block; margin: auto;" /&gt;
+---
+class: animated, fadeIn
+
+# Correlações Fenotípicas e Genômicas
+&lt;img src="figs/table1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+class: animated, fadeIn
+&lt;img src="figs/CS.png" width="100%" style="display: block; margin: auto;" /&gt;
+---
+class: animated, fadeIn
+# Classificação da Inoculação com Bactérias Promotoras de Crescimento de Plantas
+&lt;img src="figs/1-3.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Acurácia da classificação do status de inoculação (B+ e B-) usando 150 bandas hiperespectrais.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+# Predição de Fenótipos Relacionados ao Crescimento
+&lt;img src="figs/1-4.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Capacidade preditiva da altura de planta (PH), diâmetro do colmo (SD) e massa seca da parte aérea (SDM) utilizando modelos de predição fenômica, genômica e multi-ômica em cada condição de manejo (B+ e B-).
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+&lt;img src="figs/PD.png" width="100%" style="display: block; margin: auto;" /&gt;
+---
+class: animated, fadeIn
+# Phenome-wide association studies (PheWAS)
+&lt;img src="figs/2-6.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. PheWAS para os 10 SNPs de maior frequência em modelos para altura de planta (PH), diâmetro do colmo (SD) e massa seca da parte aérea (SDM) sob manejo B+.
+&lt;/p&gt;
+---
+class: animated, fadeIn
+# Multi-phenotype GWAS
+&lt;img src="figs/2.gif" width="70%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. GWAS multi-fenótipo para os 281 fenótipos hiperespectrais sob manejo B+.
+&lt;/p&gt;
+
+
+---
+class: center, middle, inverse
+
+# Fatores que Influenciam a Acurácia, Aplicações e Limitações da Metodologia
+
+---
+class: animated, fadeIn
+
+# Geração de Ortomosaicos Utilizando Imagens com Resolução Limitada
+
+&lt;img src="figs/problem/Screen Shot 2022-01-05 at 9.05.27 PM.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Diversas tentativas de montagem de ortomosaico e junção (stitching) com imagens termais.
+&lt;/p&gt;
+---
+class: animated, fadeIn
+
+# HTP challenges
+&lt;img src="figs/problem/1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Representação de diferentes shapefiles.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+
+# Geração de Shapefiles e Delimitação das Parcelas
+&lt;img src="figs/problem/2.png" width="199%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Representação de diferentes shapefiles.
+&lt;/p&gt;
+---
+class: animated, fadeIn
+
+# Geração de Shapefiles e Delimitação das Parcelas
+&lt;img src="figs/problem/3.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Representação de diferentes shapefiles.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+
+# Geração de Shapefiles e Delimitação das Parcelas
+&lt;img src="figs/problem/4.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Representação de diferentes shapefiles.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+
+# Geração de Shapefiles e Delimitação das Parcelas
+&lt;img src="figs/problem/4.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Representação de diferentes shapefiles.
+&lt;/p&gt;
+
+---
+class: animated, fadeIn
+
+#  Fatores que Impactam a Acurácia da Fenotipagem de Alto Rendimento
+
+&lt;div style="transform: scale(0.75); transform-origin: top center;"&gt;
+
+| **Fator**                       | **Descrição**                                                             |
+| :------------------------------ | :------------------------------------------------------------------------ |
+| **Qualidade do Sensor**          | Sensores de maior resolução capturam dados mais detalhados                 |
+| **Condições Ambientais**         | Clima, iluminação e variações de temperatura afetam a acurácia             |
+| **Diversidade Fenotípica**       | Maior variabilidade genética das plantas pode gerar medições mais complexas |
+| **Processamento de Dados**       | Qualidade do filtro, normalização e algoritmos de análise dos dados        |
+| **Calibração**                   | Calibração adequada dos sensores garante consistência e reduz erros        |
+| **Densidade de Amostragem**      | Amostragens mais frequentes melhoram a resolução temporal                  |
+| **Fusão de Dados**               | Combinar múltiplos tipos de sensores aumenta a acurácia na detecção de traits |
+| **Estabilidade da Plataforma**   | Plataformas fixas geram dados mais consistentes e confiáveis               |
+| **Experiência do Usuário**       | Conhecimento sobre operação e interpretação influencia a confiabilidade    |
 
 
 ---
 class: animated, fadeIn
 
-# Current Challenges
+# Desafios Atuais
 
 &lt;div style="transform: scale(0.70); transform-origin: top left; overflow: auto;width: 150%; height: 100%"&gt;
 
-| Challenge Type   | Technical Challenges                               | Biological Challenges                      |
-| :--------------- | :------------------------------------------------ | :----------------------------------------- |
-| **High Costs**   | High equipment costs, especially for advanced sensors | Increasing the affordability of sensors for broader use |
-| **Data Storage** | Large volumes of data requiring significant storage and processing power | Translating data into actionable insights for plant breeding |
-| **Calibration**  | Sensor calibration challenges due to environmental variables | Standardizing biological traits across diverse plant species |
-| **Accuracy**     | Variability in sensor performance under different environmental conditions | Biological variability across plant species can affect data consistency |
-| **Data Integration** | Challenges in integrating data from multiple sensor types | Integrating phenotypic data with genetic data for better predictions |
-| **Real-time Analysis** | Need for real-time processing of high volumes of data | The complexity of analyzing dynamic biological processes in real-time |
-| **Platform Limitations** | Restrictions in platform mobility and accessibility | Adaptation of phenotyping methods to different crop types and growth stages |
-| **Scalability**  | Scaling up HTP systems for large areas or multiple species | Ensuring biological relevance at a large scale in diverse ecosystems |
-| **Breeding integration**  | define breeding strategies for mid-correlation with the target trait |
+| **Tipo de Desafio**        | **Desafios Técnicos**                                       | **Desafios Biológicos**                                    |
+| :------------------------- | :--------------------------------------------------------- | :-------------------------------------------------------- |
+| **Altos Custos**           | Equipamentos caros, especialmente sensores avançados       | Tornar os sensores mais acessíveis para uso amplo         |
+| **Armazenamento de Dados** | Grandes volumes de dados exigem armazenamento e processamento robustos | Transformar dados em informações úteis para o melhoramento genético |
+| **Calibração**             | Dificuldades de calibração de sensores devido a variáveis ambientais | Padronizar traits biológicos em espécies vegetais diversas |
+| **Acurácia**               | Variação no desempenho dos sensores em diferentes condições ambientais | A variabilidade biológica entre espécies pode afetar a consistência dos dados |
+| **Integração de Dados**    | Dificuldade em integrar dados de múltiplos tipos de sensores | Combinar dados fenotípicos e genéticos para melhores predições |
+| **Análise em Tempo Real**  | Necessidade de processar grandes volumes de dados em tempo real | Complexidade de analisar processos biológicos dinâmicos em tempo real |
+| **Limitações da Plataforma** | Restrições de mobilidade e acessibilidade das plataformas | Adaptação dos métodos de fenotipagem para diferentes culturas e estágios de crescimento |
+| **Escalabilidade**         | Dificuldade em escalar HTP para grandes áreas ou múltiplas espécies | Garantir relevância biológica em larga escala em ecossistemas diversos |
+| **Integração ao Melhoramento** | Definir estratégias de melhoramento para correlação moderada com o trait-alvo |                                                          |
 
+---
+
+class: animated, fadeIn
+
+&lt;br /&gt; &lt;br /&gt; &lt;br /&gt; &lt;br /&gt; &lt;br /&gt; &lt;br /&gt;
+#.center[Muito obrigado! ]
+
+.right[[rafael.gmail.com](mailto:rafael.yassue@gmail.com?subject=%20Presentation)]
+.right[https://rafaelyassue.github.io/cv-online/]
+&lt;img src="figs/site2.png" width="50%" style="display: block; margin: auto 0 auto auto;" /&gt;
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
