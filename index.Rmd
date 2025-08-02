@@ -210,7 +210,8 @@ Figura. Acurácia da classificação do status de inoculação (B+ e B-) usando 
 
 ---
 class: animated, fadeIn
-# Predição de Fenótipos Relacionados ao Crescimento
+# Predição Genômica, Fenômica e Multi-ômica
+
 ```{r, echo=FALSE, out.width="80%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/1-4.png")
 ```
