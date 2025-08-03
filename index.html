@@ -8,6 +8,7 @@
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -28,15 +29,13 @@ class: center, middle, inverse, title-slide
 
 ---
 
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Summary
 + Introdução 
   + Breeding Equations
   + Novas ferramentas para ganho genético
 + Phenomics vs Genomics
-  + Comparação de abordagens
-  + Integração de dados fenotípicos e genômicos
 + Estudo de Caso: Integrando Genômica e Fenotipagem de Alto Rendimento na Interação Genótipo × Bactérias Promotoras de Crescimento
   - Plataforma de baixo custo para coleta de imagens em ambiente interno
   + *Shovelomics*
@@ -48,7 +47,7 @@ class: animated, fadeIn
 
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Fenômica e o Ganho Genético
 
 $$
@@ -75,6 +74,42 @@ $$
 | Seleção precoce              | Correlação genética entre traits (ex.: angulação de raiz vs rusticidade) ou avaliação precoce (ex.: resistencia a doença) |
 
 ---
+class: animate__animated, animate__fadeIn
+
+# Fenômica como nova ferramenta para ganho genético
+
+- **Aumentar a acurácia da seleção** (melhora \(r_a\) na Breeder’s Equation)
+
+--
+
+- **Seleção precoce** de plantas promissoras por seleção indireta e correlecao genética entre traits
+
+--
+
+- **Detecção precoce de doenças e estresses** antes de sintomas visíveis
+
+--
+
+- **Uso de traits secundários** correlacionados ao trait principal
+
+--
+
+- **Predição multi-fenótipo** combinando traits primários e secundários
+
+--
+
+- **Integração com seleção genômica** (GS + Phenomics = ↑ ganho genético)
+
+--
+
+- **Estudos de interação genótipo × ambiente (G×E)** em grande escala
+
+--
+
+- **Redução de custo por dado** em comparação à fenotipagem manual
+
+
+---
 # Potencial Redução de Custo
 
 - **Investimento inicial alto** em sensores e infraestrutura
@@ -95,21 +130,100 @@ $$
 
 - **Não possui custo de reagentes**  
 
+---
+class: animate__animated, animate__fadeIn
+# Fenômica vs Genômica
+
+&lt;div style="transform: scale(0.75); transform-origin: top center;"&gt;
+
+&lt;table style="width:100%; border-collapse: collapse;"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style="border: 1px solid #ddd; padding: 6px; text-align: left;"&gt;Aspecto&lt;/th&gt;
+      &lt;th style="border: 1px solid #ddd; padding: 6px; text-align: left;"&gt;Seleção Genômica (GS)&lt;/th&gt;
+      &lt;th style="border: 1px solid #ddd; padding: 6px; text-align: left;"&gt;Seleção Fenômica (Phenomics/HTP)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Base da predição&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Marcadores moleculares (SNPs)&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Traits fenotípicos de alta resolução&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Efeitos estimados&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Genéticos, principalmente aditivos&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Variância fenotípica; pode incluir efeitos ambientais e superestimar a acurácia&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Momento de aplicação&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Pode ser feita &lt;b&gt;antes da avaliação de campo&lt;/b&gt;&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Necessita plantas em crescimento&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Acurácia&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Depende da população de treinamento, anos, tamanho do painel&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Alta em &lt;b&gt;traits fisiológicos e estruturais&lt;/b&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Custo por indivíduo&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;&lt;b&gt;Médio&lt;/b&gt;: Laboratório + reagentes&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Alto custo inicial, &lt;b&gt;cai com escala&lt;/b&gt;, sem custo de reagentes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Velocidade do ciclo&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;&lt;b&gt;Muito rápida&lt;/b&gt;, permite seleção antecipada&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;&lt;b&gt;Rápida&lt;/b&gt;, mas depende do estágio fenológico&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Detecta traits secundários&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Apenas se associados por modelos&lt;/td&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;&lt;b&gt;Sim&lt;/b&gt;, captura sinais fisiológicos invisíveis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="border: 1px solid #ddd; padding: 6px;"&gt;Integração ideal&lt;/td&gt;
+      &lt;td colspan="2" style="border: 1px solid #ddd; padding: 6px;"&gt;
+        &lt;b&gt;GS + Phenomics → Integração Multi-ômica:&lt;/b&gt; Aumenta acurácia, robustez e ganho genético.
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;
+
 
 ---
-class: center, middle, inverse
+class: animate__animated, animate__fadeIn, inverse, center, middle
 
 # Estudo de Caso: Integrando Genômica e Fenotipagem de Alto Rendimento na Interação Genótipo × Bactérias Promotoras de Crescimento
 
+---
+class: animate__animated, animate__fadeIn
+
+# Materiais utilizados nos três projetos
+
++ Condições de estufa  
++ Estágio inicial de desenvolvimento do milho (seis folhas totalmente expandidas)  
++ 360 linhagens endogâmicas  
++ 13.826 SNPs  
++ Dois manejos, ambos sob condição de nitrogênio limitado:  
+  - **B+** População sintética de 4 BPGP (Bactérias Promotoras de Crescimento de Plantas):  
+      * *Bacillus thuringiensis* RZ2MS9  
+      * *Delftia* sp. RZ4MS18  
+      * *Pantoea agglomerans* 33.1  
+      * *Azospirillum brasilense* Ab-v5  
+  - **B-** Sem BPGP  
++ 2 repetições  
++ Total de 1.512 parcelas
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Por que usar Fenotipagem de Alto Rendimento?
-&lt;img src="figs/HTP.png" width="95%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/HTP.png" width="85%" style="display: block; margin: auto;" /&gt;
 ---
 
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Uma plataforma de fenotipagem de alto rendimento em estufa de baixo custo
 
@@ -120,14 +234,17 @@ Figura. Representação da plataforma de Fenotipagem de Alto Rendimento de baixo
 
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Coleta de Imagens Termais e Multiespectrais
 
 &lt;img src="figs/RGB_colection.gif" width="50%" /&gt;&lt;img src="figs/thermal_coletion.gif" width="50%" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. Representação da aquisição de imagens RGB (esquerda) e termais (direita) usando a plataforma de FAR (Fenotipagem de Alto Rendimento) de baixo custo.
+&lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Aquisição de Dados
 
@@ -137,7 +254,7 @@ Figure. Design of the greenhouse-based high-throughput phenotyping platform.
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Aquisição de Imagens Hiperespectrais
 
 &lt;img src="figs/fig01_da.png" width="90%" style="display: block; margin: auto;" /&gt;
@@ -146,22 +263,22 @@ Figura. Resumo da aquisição e processamento de dados. A) câmera hiperespectra
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Data processing 
 &lt;img src="figs/fig02.png" width="75%" style="display: block; margin: auto;" /&gt;
-&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+&lt;p style="font-family: times, serif; font-size:10pt; font-style:italic"&gt;
 Figura. Resumo do processamento de imagens multiespectrais. (A) aquisição de imagens; (B) montagem do ortomosaico; (C) recorte das parcelas; (D) cobertura do dossel (CC); (E) nuvem de pontos densa; (F) a altura das plantas (PH) foi calculada com base nas diferenças entre a nuvem de pontos densa com as plantas e a nuvem de pontos densa apenas com o vaso; (G) nuvem de pontos densa após aplicação do filtro para remover o fundo; (H) nuvem de pontos densa para cada parcela; (I) reconstrução 3D da nuvem de pontos densa para obtenção do volume do dossel; e (J) f(biomassa) obtida pelo produto da altura da planta (PH) e CC.
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Shovelomics 
 
-&lt;img src="figs/molbreed.png" width="120%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/molbreed.png" width="100%" style="display: block; margin: auto;" /&gt;
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Multi-phenotype Genomic prediction
 &lt;img src="figs/mol_1.png" width="70%" style="display: block; margin: auto;" /&gt;
 &lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
@@ -169,31 +286,31 @@ Figura. Predição genômica usando GBLUP, GBLUP_GMS (GBLUP baseado na seleção
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 &lt;img src="figs/TPPJ.png" width="120%" style="display: block; margin: auto;" /&gt;
 
 ---
 # Crescimento de Plantas
 &lt;img src="figs/PG.png" width="65%" style="display: block; margin: auto;" /&gt;
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Correlações Fenotípicas e Genômicas
 &lt;img src="figs/table1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 &lt;img src="figs/CS.png" width="100%" style="display: block; margin: auto;" /&gt;
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Classificação da Inoculação com Bactérias Promotoras de Crescimento de Plantas
-&lt;img src="figs/1-3.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/1-3.png" width="50%" style="display: block; margin: auto;" /&gt;
 &lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
 Figura. Acurácia da classificação do status de inoculação (B+ e B-) usando 150 bandas hiperespectrais.
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Predição Genômica, Fenômica e Multi-ômica
 
 &lt;img src="figs/1-4.png" width="80%" style="display: block; margin: auto;" /&gt;
@@ -202,31 +319,44 @@ Figura. Capacidade preditiva da altura de planta (PH), diâmetro do colmo (SD) e
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 &lt;img src="figs/PD.png" width="100%" style="display: block; margin: auto;" /&gt;
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Phenome-wide association studies (PheWAS)
 &lt;img src="figs/2-6.png" width="100%" style="display: block; margin: auto;" /&gt;
 &lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
 Figura. PheWAS para os 10 SNPs de maior frequência em modelos para altura de planta (PH), diâmetro do colmo (SD) e massa seca da parte aérea (SDM) sob manejo B+.
 &lt;/p&gt;
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Multi-phenotype GWAS
 &lt;img src="figs/2.gif" width="70%" style="display: block; margin: auto;" /&gt;
 &lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
 Figura. GWAS multi-fenótipo para os 281 fenótipos hiperespectrais sob manejo B+.
 &lt;/p&gt;
 
+---
+class: animate__animated, animate__fadeIn
+# Câmera Termal na Identificação de Doenças
+&lt;img src="figs/758CFDF0-42F4-4FEB-ACC0-44973111C347.JPG" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
-class: center, middle, inverse
+class: animate__animated, animate__fadeIn
+# Câmera Termal na Identificação de Doenças
+&lt;img src="figs/plot_temp.png" width="120%" style="display: block; margin: auto;" /&gt;
+&lt;p style="font-family: times, serif; font-size:11pt; font-style:italic"&gt;
+Figura. GWAS multi-fenótipo para os 281 fenótipos hiperespectrais sob manejo B+.
+&lt;/p&gt;
+
+
+---
+class: animate__animated, animate__fadeIn, inverse, center, middle
 
 # Fatores que Influenciam a Acurácia, Aplicações e Limitações da Metodologia
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Ortomosaicos Utilizando Imagens com Resolução Limitada
 
@@ -235,7 +365,7 @@ class: animated, fadeIn
 Figura. Diversas tentativas de montagem de ortomosaico e junção (stitching) com imagens termais.
 &lt;/p&gt;
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # HTP challenges
 &lt;img src="figs/problem/1.png" width="100%" style="display: block; margin: auto;" /&gt;
@@ -244,7 +374,7 @@ Figura. Representação de diferentes shapefiles.
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Shapefiles e Delimitação das Parcelas
 &lt;img src="figs/problem/2.png" width="199%" style="display: block; margin: auto;" /&gt;
@@ -252,7 +382,7 @@ class: animated, fadeIn
 Figura. Representação de diferentes shapefiles.
 &lt;/p&gt;
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Shapefiles e Delimitação das Parcelas
 &lt;img src="figs/problem/3.png" width="100%" style="display: block; margin: auto;" /&gt;
@@ -261,7 +391,7 @@ Figura. Representação de diferentes shapefiles.
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Shapefiles e Delimitação das Parcelas
 &lt;img src="figs/problem/4.png" width="100%" style="display: block; margin: auto;" /&gt;
@@ -270,7 +400,7 @@ Figura. Representação de diferentes shapefiles.
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Shapefiles e Delimitação das Parcelas
 &lt;img src="figs/problem/4.png" width="100%" style="display: block; margin: auto;" /&gt;
@@ -279,7 +409,7 @@ Figura. Representação de diferentes shapefiles.
 &lt;/p&gt;
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 #  Fatores que Impactam a Acurácia da Fenotipagem de Alto Rendimento
 
@@ -299,7 +429,7 @@ class: animated, fadeIn
 
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Desafios Atuais
 
@@ -319,12 +449,12 @@ class: animated, fadeIn
 
 ---
 
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 &lt;br /&gt; &lt;br /&gt; &lt;br /&gt; &lt;br /&gt; &lt;br /&gt; &lt;br /&gt;
 #.center[Muito obrigado! ]
 
-.right[[rafael.gmail.com](mailto:rafael.yassue@gmail.com?subject=%20Presentation)]
+.right[[rafael.yassue@gmail.com](mailto:rafael.yassue@gmail.com?subject=%20Presentation)]
 .right[https://rafaelyassue.github.io/cv-online/]
 &lt;img src="figs/site2.png" width="50%" style="display: block; margin: auto 0 auto auto;" /&gt;
 

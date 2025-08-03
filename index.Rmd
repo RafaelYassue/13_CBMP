@@ -14,18 +14,16 @@ output:
       - default
       - default-fonts 
       - animate.css
-    incremental: true
+      - https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Summary
 + Introdução 
   + Breeding Equations
   + Novas ferramentas para ganho genético
 + Phenomics vs Genomics
-  + Comparação de abordagens
-  + Integração de dados fenotípicos e genômicos
 + Estudo de Caso: Integrando Genômica e Fenotipagem de Alto Rendimento na Interação Genótipo × Bactérias Promotoras de Crescimento
   - Plataforma de baixo custo para coleta de imagens em ambiente interno
   + *Shovelomics*
@@ -37,7 +35,7 @@ class: animated, fadeIn
 
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Fenômica e o Ganho Genético
 
 $$
@@ -64,6 +62,42 @@ $$
 | Seleção precoce              | Correlação genética entre traits (ex.: angulação de raiz vs rusticidade) ou avaliação precoce (ex.: resistencia a doença) |
 
 ---
+class: animate__animated, animate__fadeIn
+
+# Fenômica como nova ferramenta para ganho genético
+
+- **Aumentar a acurácia da seleção** (melhora \(r_a\) na Breeder’s Equation)
+
+--
+
+- **Seleção precoce** de plantas promissoras por seleção indireta e correlecao genética entre traits
+
+--
+
+- **Detecção precoce de doenças e estresses** antes de sintomas visíveis
+
+--
+
+- **Uso de traits secundários** correlacionados ao trait principal
+
+--
+
+- **Predição multi-fenótipo** combinando traits primários e secundários
+
+--
+
+- **Integração com seleção genômica** (GS + Phenomics = ↑ ganho genético)
+
+--
+
+- **Estudos de interação genótipo × ambiente (G×E)** em grande escala
+
+--
+
+- **Redução de custo por dado** em comparação à fenotipagem manual
+
+
+---
 # Potencial Redução de Custo
 
 - **Investimento inicial alto** em sensores e infraestrutura
@@ -84,23 +118,102 @@ $$
 
 - **Não possui custo de reagentes**  
 
+---
+class: animate__animated, animate__fadeIn
+# Fenômica vs Genômica
+
+<div style="transform: scale(0.75); transform-origin: top center;">
+
+<table style="width:100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Aspecto</th>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Seleção Genômica (GS)</th>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Seleção Fenômica (Phenomics/HTP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Base da predição</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Marcadores moleculares (SNPs)</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Traits fenotípicos de alta resolução</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Efeitos estimados</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Genéticos, principalmente aditivos</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Variância fenotípica; pode incluir efeitos ambientais e superestimar a acurácia</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Momento de aplicação</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Pode ser feita <b>antes da avaliação de campo</b></td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Necessita plantas em crescimento</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Acurácia</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Depende da população de treinamento, anos, tamanho do painel</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Alta em <b>traits fisiológicos e estruturais</b></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Custo por indivíduo</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Médio</b>: Laboratório + reagentes</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Alto custo inicial, <b>cai com escala</b>, sem custo de reagentes</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Velocidade do ciclo</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Muito rápida</b>, permite seleção antecipada</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Rápida</b>, mas depende do estágio fenológico</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Detecta traits secundários</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Apenas se associados por modelos</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Sim</b>, captura sinais fisiológicos invisíveis</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Integração ideal</td>
+      <td colspan="2" style="border: 1px solid #ddd; padding: 6px;">
+        <b>GS + Phenomics → Integração Multi-ômica:</b> Aumenta acurácia, robustez e ganho genético.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
 
 ---
-class: center, middle, inverse
+class: animate__animated, animate__fadeIn, inverse, center, middle
 
 # Estudo de Caso: Integrando Genômica e Fenotipagem de Alto Rendimento na Interação Genótipo × Bactérias Promotoras de Crescimento
 
+---
+class: animate__animated, animate__fadeIn
+
+# Materiais utilizados nos três projetos
+
++ Condições de estufa  
++ Estágio inicial de desenvolvimento do milho (seis folhas totalmente expandidas)  
++ 360 linhagens endogâmicas  
++ 13.826 SNPs  
++ Dois manejos, ambos sob condição de nitrogênio limitado:  
+  - **B+** População sintética de 4 BPGP (Bactérias Promotoras de Crescimento de Plantas):  
+      * *Bacillus thuringiensis* RZ2MS9  
+      * *Delftia* sp. RZ4MS18  
+      * *Pantoea agglomerans* 33.1  
+      * *Azospirillum brasilense* Ab-v5  
+  - **B-** Sem BPGP  
++ 2 repetições  
++ Total de 1.512 parcelas
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Por que usar Fenotipagem de Alto Rendimento?
-```{r, echo=FALSE, out.width="95%",fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="85%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/HTP.png")
 ```
 ---
 
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Uma plataforma de fenotipagem de alto rendimento em estufa de baixo custo
 
@@ -113,7 +226,7 @@ Figura. Representação da plataforma de Fenotipagem de Alto Rendimento de baixo
 
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Coleta de Imagens Termais e Multiespectrais
 
@@ -121,9 +234,12 @@ class: animated, fadeIn
 knitr::include_graphics("figs/RGB_colection.gif")
 knitr::include_graphics("figs/thermal_coletion.gif")
 ```
+<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+Figura. Representação da aquisição de imagens RGB (esquerda) e termais (direita) usando a plataforma de FAR (Fenotipagem de Alto Rendimento) de baixo custo.
+</p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Aquisição de Dados
 
@@ -135,7 +251,7 @@ Figure. Design of the greenhouse-based high-throughput phenotyping platform.
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Aquisição de Imagens Hiperespectrais
 
 ```{r, echo=FALSE, out.width="90%",fig.cap="", fig.align="center"}
@@ -146,26 +262,26 @@ Figura. Resumo da aquisição e processamento de dados. A) câmera hiperespectra
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Data processing 
 ```{r, echo=FALSE, out.width="75%", fig.align="center"}
 knitr::include_graphics("figs/fig02.png")
 ```
-<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+<p style="font-family: times, serif; font-size:10pt; font-style:italic">
 Figura. Resumo do processamento de imagens multiespectrais. (A) aquisição de imagens; (B) montagem do ortomosaico; (C) recorte das parcelas; (D) cobertura do dossel (CC); (E) nuvem de pontos densa; (F) a altura das plantas (PH) foi calculada com base nas diferenças entre a nuvem de pontos densa com as plantas e a nuvem de pontos densa apenas com o vaso; (G) nuvem de pontos densa após aplicação do filtro para remover o fundo; (H) nuvem de pontos densa para cada parcela; (I) reconstrução 3D da nuvem de pontos densa para obtenção do volume do dossel; e (J) f(biomassa) obtida pelo produto da altura da planta (PH) e CC.
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Shovelomics 
 
-```{r, echo=FALSE, out.width="120%",fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/molbreed.png")
 ```
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Multi-phenotype Genomic prediction
 ```{r, echo=FALSE, out.width="70%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/mol_1.png")
@@ -175,7 +291,7 @@ Figura. Predição genômica usando GBLUP, GBLUP_GMS (GBLUP baseado na seleção
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 ```{r, echo=FALSE, out.width="120%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/TPPJ.png")
 ```
@@ -186,7 +302,7 @@ knitr::include_graphics("figs/TPPJ.png")
 knitr::include_graphics("figs/PG.png")
 ```
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Correlações Fenotípicas e Genômicas
 ```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
@@ -194,14 +310,14 @@ knitr::include_graphics("figs/table1.png")
 ```
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("figs/CS.png")
 ```
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Classificação da Inoculação com Bactérias Promotoras de Crescimento de Plantas
-```{r, echo=FALSE, out.width="60%",fig.cap="", fig.align="center"}
+```{r, echo=FALSE, out.width="50%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/1-3.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
@@ -209,7 +325,7 @@ Figura. Acurácia da classificação do status de inoculação (B+ e B-) usando 
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Predição Genômica, Fenômica e Multi-ômica
 
 ```{r, echo=FALSE, out.width="80%",fig.cap="", fig.align="center"}
@@ -220,12 +336,12 @@ Figura. Capacidade preditiva da altura de planta (PH), diâmetro do colmo (SD) e
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("figs/PD.png")
 ```
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Phenome-wide association studies (PheWAS)
 ```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/2-6.png")
@@ -234,7 +350,7 @@ knitr::include_graphics("figs/2-6.png")
 Figura. PheWAS para os 10 SNPs de maior frequência em modelos para altura de planta (PH), diâmetro do colmo (SD) e massa seca da parte aérea (SDM) sob manejo B+.
 </p>
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 # Multi-phenotype GWAS
 ```{r, echo=FALSE, out.width="70%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/2.gif")
@@ -243,14 +359,31 @@ knitr::include_graphics("figs/2.gif")
 Figura. GWAS multi-fenótipo para os 281 fenótipos hiperespectrais sob manejo B+.
 </p>
 
+---
+class: animate__animated, animate__fadeIn
+# Câmera Termal na Identificação de Doenças
+```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
+knitr::include_graphics("figs/758CFDF0-42F4-4FEB-ACC0-44973111C347.JPG")
+```
 
 ---
-class: center, middle, inverse
+class: animate__animated, animate__fadeIn
+# Câmera Termal na Identificação de Doenças
+```{r, echo=FALSE, out.width="120%",fig.cap="", fig.align="center"}
+knitr::include_graphics("figs/plot_temp.png")
+```
+<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+Figura. GWAS multi-fenótipo para os 281 fenótipos hiperespectrais sob manejo B+.
+</p>
+
+
+---
+class: animate__animated, animate__fadeIn, inverse, center, middle
 
 # Fatores que Influenciam a Acurácia, Aplicações e Limitações da Metodologia
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Ortomosaicos Utilizando Imagens com Resolução Limitada
 
@@ -261,7 +394,7 @@ knitr::include_graphics("figs/problem/Screen Shot 2022-01-05 at 9.05.27 PM.png")
 Figura. Diversas tentativas de montagem de ortomosaico e junção (stitching) com imagens termais.
 </p>
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # HTP challenges
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
@@ -272,7 +405,7 @@ Figura. Representação de diferentes shapefiles.
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Shapefiles e Delimitação das Parcelas
 ```{r, echo=FALSE, out.width="199%", fig.align="center"}
@@ -282,7 +415,7 @@ knitr::include_graphics("figs/problem/2.png")
 Figura. Representação de diferentes shapefiles.
 </p>
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Shapefiles e Delimitação das Parcelas
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
@@ -293,7 +426,7 @@ Figura. Representação de diferentes shapefiles.
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Shapefiles e Delimitação das Parcelas
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
@@ -304,7 +437,7 @@ Figura. Representação de diferentes shapefiles.
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Geração de Shapefiles e Delimitação das Parcelas
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
@@ -315,7 +448,7 @@ Figura. Representação de diferentes shapefiles.
 </p>
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 #  Fatores que Impactam a Acurácia da Fenotipagem de Alto Rendimento
 
@@ -335,7 +468,7 @@ class: animated, fadeIn
 
 
 ---
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 # Desafios Atuais
 
@@ -355,12 +488,12 @@ class: animated, fadeIn
 
 ---
 
-class: animated, fadeIn
+class: animate__animated, animate__fadeIn
 
 <br /> <br /> <br /> <br /> <br /> <br />
 #.center[Muito obrigado! ]
 
-.right[[rafael.gmail.com](mailto:rafael.yassue@gmail.com?subject=%20Presentation)]
+.right[[rafael.yassue@gmail.com](mailto:rafael.yassue@gmail.com?subject=%20Presentation)]
 .right[https://rafaelyassue.github.io/cv-online/]
 ```{r, echo=FALSE, out.width="50%",fig.cap="", fig.align="right"}
 knitr::include_graphics("figs/site2.png")
