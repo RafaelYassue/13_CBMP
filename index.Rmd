@@ -141,7 +141,7 @@ class: animate__animated, animate__fadeIn
     <tr>
       <td style="border: 1px solid #ddd; padding: 6px;">Efeitos estimados</td>
       <td style="border: 1px solid #ddd; padding: 6px;">Genéticos, principalmente aditivos</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Variância fenotípica; pode incluir efeitos ambientais e superestimar a acurácia</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Variância fenotípica; pode incluir efeitos ambientais e superestimar a acurácia de CV e validação</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 6px;">Momento de aplicação</td>
@@ -164,9 +164,9 @@ class: animate__animated, animate__fadeIn
       <td style="border: 1px solid #ddd; padding: 6px;"><b>Rápida</b>, mas depende do estágio fenológico</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Detecta traits secundários</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Apenas se associados por modelos</td>
-      <td style="border: 1px solid #ddd; padding: 6px;"><b>Sim</b>, captura sinais fisiológicos invisíveis</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Traits</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Predição apenas de traits conhecidos</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Inferência sobre novos traits fisiológicos e estruturais</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 6px;">Integração ideal</td>
