@@ -19,19 +19,12 @@ output:
 ---
 class: animate__animated, animate__fadeIn
 
-# Summary
-+ Introdução 
-  + Breeding Equations
-  + Novas ferramentas para ganho genético
-+ Phenomics vs Genomics
-+ Estudo de Caso: Integrando Genômica e Fenotipagem de Alto Rendimento na Interação Genótipo × Bactérias Promotoras de Crescimento
-  - Plataforma de baixo custo para coleta de imagens em ambiente interno
-  + *Shovelomics*
-  + Reconstrução 3D a partir de imagens (*Structure from Motion*)
-  + Câmera Multispectral 
-  + Câmera Hiperspectral
-  + Câmera térmica
-+ Aplicações e Limitações 
+# Sumário
+
+1. Fenômica e o Ganho Genético
+2. Fenômica vs Genômica  
+3. Estudos de Caso 
+4. Aplicações, Limitações e Desafios
 
 
 ---
@@ -59,7 +52,7 @@ $$
 | Reduz o erro experimental                        | ↑ Herdabilidade → ↑ Acurácia |
 | Permite medições temporais repetidas             | ↑ Precisão das estimativas   |
 | Aumenta o número de plantas avaliadas            | ↑ Robustez estatística e ↑ variância genética      |
-| Seleção precoce              | Correlação genética entre traits (ex.: angulação de raiz vs rusticidade) ou avaliação precoce (ex.: resistencia a doença) |
+| Seleção precoce              | Correlação genética entre traits (ex.: angulação de raiz vs rusticidade) ou avaliação precoce (ex.: resistência a doenças) |
 
 ---
 class: animate__animated, animate__fadeIn
@@ -70,7 +63,7 @@ class: animate__animated, animate__fadeIn
 
 --
 
-- **Seleção precoce** de plantas promissoras por seleção indireta e correlecao genética entre traits
+- **Seleção precoce** de plantas promissoras por seleção indireta e correlação genética entre traits
 
 --
 
@@ -116,7 +109,7 @@ class: animate__animated, animate__fadeIn
 
 --
 
-- **Não possui custo de reagentes**  
+- **Não há custo com reagentes**  
 
 ---
 class: animate__animated, animate__fadeIn
@@ -141,7 +134,7 @@ class: animate__animated, animate__fadeIn
     <tr>
       <td style="border: 1px solid #ddd; padding: 6px;">Efeitos estimados</td>
       <td style="border: 1px solid #ddd; padding: 6px;">Genéticos, principalmente aditivos</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Variância fenotípica; pode incluir efeitos ambientais e superestimar a acurácia de CV e validação</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Variância fenotípica; pode incluir efeitos ambientais e superestimação da acurácia em CV e validação</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 6px;">Momento de aplicação</td>
@@ -166,7 +159,7 @@ class: animate__animated, animate__fadeIn
     <tr>
       <td style="border: 1px solid #ddd; padding: 6px;">Traits</td>
       <td style="border: 1px solid #ddd; padding: 6px;">Predição apenas de traits conhecidos</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Inferência sobre novos traits fisiológicos e estruturais</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Inferência de novos traits fisiológicos e estruturais</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 6px;">Integração ideal</td>
@@ -188,7 +181,7 @@ class: animate__animated, animate__fadeIn, inverse, center, middle
 ---
 class: animate__animated, animate__fadeIn
 
-# Materiais utilizados nos três projetos
+# Materiais e Métodos
 
 + Condições de estufa  
 + Estágio inicial de desenvolvimento do milho (seis folhas totalmente expandidas)  
@@ -391,7 +384,7 @@ class: animate__animated, animate__fadeIn
 knitr::include_graphics("figs/problem/Screen Shot 2022-01-05 at 9.05.27 PM.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Diversas tentativas de montagem de ortomosaico e junção (stitching) com imagens termais.
+Figura. Diversas tentativas de montagem de ortomosaico e junção (stitching de imagens) com imagens termais.
 </p>
 ---
 class: animate__animated, animate__fadeIn
@@ -464,7 +457,7 @@ class: animate__animated, animate__fadeIn
 | **Densidade de Amostragem**      | Amostragens mais frequentes melhoram a resolução temporal                  |
 | **Fusão de Dados**               | Combinar múltiplos tipos de sensores aumenta a acurácia na detecção de traits |
 | **Estabilidade da Plataforma**   | Plataformas fixas geram dados mais consistentes e confiáveis               |
-| **Experiência do Usuário**       | Conhecimento sobre operação e interpretação influencia a confiabilidade    |
+| **Experiência do Usuário**       | Conhecimento sobre operação e interpretação influencia na confiabilidade   |
 
 
 ---
@@ -483,8 +476,31 @@ class: animate__animated, animate__fadeIn
 | **Integração de Dados**    | Dificuldade em integrar dados de múltiplos tipos de sensores | Combinar dados fenotípicos e genéticos para melhores predições |
 | **Análise em Tempo Real**  | Necessidade de processar grandes volumes de dados em tempo real | Complexidade de analisar processos biológicos dinâmicos em tempo real |
 | **Limitações da Plataforma** | Restrições de mobilidade e acessibilidade das plataformas | Adaptação dos métodos de fenotipagem para diferentes culturas e estágios de crescimento |
-| **Escalabilidade**         | Dificuldade em escalar HTP para grandes áreas ou múltiplas espécies | Garantir relevância biológica em larga escala em ecossistemas diversos |
+| **Escalabilidade**         | Dificuldade em escalar HTP para grandes áreas ou múltiplas espécies | Garantir relevância biológica em larga escala e em diferentes ecossistemas |
 | **Integração ao Melhoramento** | Definir estratégias de melhoramento para correlação moderada com o trait-alvo |                                                          |
+---
+class: animate__animated, animate__fadeIn
+
+# Em Poucas Palavras
+
+- Fenômica amplia o ganho genético ao aumentar acurácia e reduzir custos  
+
+- Tecnologias acessíveis permitem uso em larga escala, mesmo com orçamento restrito  
+
+- Integração com genômica é o futuro: mais robustez, mais eficiência  
+
+- Estratégias de melhoramento para maximizar a acurácia dos modelos de fenômica
+
+- Multi-ômica → chave para próxima geração de melhoramento
+
+---
+class: animate__animated, animate__fadeIn, middle
+
+# Agradecimentos 
+
+```{r, echo=FALSE, out.width="100%", fig.cap="", fig.align="center"}
+knitr::include_graphics("figs/plot.jpg")
+```
 
 ---
 
