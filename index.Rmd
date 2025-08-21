@@ -5,8 +5,6 @@ author:
 institute: "GDM Seeds"
 date: "03 de setembro de 2025"
 
-header-includes:
-  - \usepackage{booktabs}
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -16,8 +14,13 @@ output:
       - animate.css
       - https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
 
+header-includes:
+  - \usepackage{booktabs}
+
 ---
-class: animate__animated, animate__fadeIn
+class: animate__animated, animate__fadeIn, has-logo
+
+
 
 # Sumário
 
@@ -25,6 +28,7 @@ class: animate__animated, animate__fadeIn
 2. Fenômica vs Genômica  
 3. Estudos de Caso 
 4. Aplicações, Limitações e Desafios
+
 
 
 ---
