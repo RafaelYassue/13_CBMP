@@ -1,9 +1,9 @@
 ---
-title: "Do Pixel à Informação: Como a Fenotipagem de Alto Rendimento Pode Aumentar o Ganho Genético"
+title: "From Pixel to Insight: How High-Throughput Phenotyping Increases Genetic Gain"
 author:  
   - Rafael Massahiro Yassue
 institute: "GDM Seeds"
-date: "03 de setembro de 2025"
+date: "September 3, 2025"
 
 output:
   xaringan::moon_reader:
@@ -20,155 +20,151 @@ header-includes:
 ---
 class: animate__animated, animate__fadeIn, has-logo
 
+# Outline
 
-
-# Sumário
-
-1. Fenômica e o Ganho Genético
-2. Fenômica vs Genômica  
-3. Estudos de Caso 
-4. Aplicações, Limitações e Desafios
-
-
+1. Phenomics and Genetic Gain  
+2. Phenomics vs. Genomics  
+3. Case Studies  
+4. Applications, Limitations, and Challenges
 
 ---
 class: animate__animated, animate__fadeIn
-# Fenômica e o Ganho Genético
+# Phenomics and Genetic Gain
 
 $$
 \Delta G = \frac{\color{red}{i} \cdot \color{red}{r_a} \cdot \color{red}{\sigma_a}}{\color{red}{L}}
 $$
 
 \begin{aligned}
-\Delta G & : \text{ganho genético por ciclo de seleção} \\
-\color{red}{i} & : \text{intensidade de seleção} \\
-\color{red}{r_a} & : \text{acurácia da seleção (melhorada com fenotipagem de alto rendimento)} \\
-\color{red}{\sigma_a} & : \text{desvio-padrão genético aditivo} \\
-\color{red}{L} & : \text{duração do ciclo de seleção (anos)}
+\Delta G & : \text{genetic gain per selection cycle} \\
+\color{red}{i} & : \text{selection intensity} \\
+\color{red}{r_a} & : \text{selection accuracy (improved with high-throughput phenotyping)} \\
+\color{red}{\sigma_a} & : \text{additive genetic standard deviation} \\
+\color{red}{L} & : \text{length of the selection cycle (years)}
 \end{aligned}
 
 --
 
 <div style="transform: scale(0.75); transform-origin: top center;">
 
-| **Como a Fenômica Aumenta ganho Genético** | **Efeito no Ganho Genético** |
-| :---------------------------------------------- | :--------------------------- |
-| Reduz o erro experimental                        | ↑ Herdabilidade → ↑ Acurácia |
-| Permite medições temporais repetidas             | ↑ Precisão das estimativas   |
-| Aumenta o número de plantas avaliadas            | ↑ Robustez estatística e ↑ variância genética      |
-| Seleção precoce              | Correlação genética entre traits (ex.: angulação de raiz vs rusticidade) ou avaliação precoce (ex.: resistência a doenças) |
+| **How Phenomics Increases Genetic Gain** | **Effect on Genetic Gain** |
+| :--------------------------------------- | :-------------------------- |
+| Reduces experimental error               | ↑ Heritability → ↑ Accuracy |
+| Enables repeated temporal measurements   | ↑ Precision of estimates    |
+| Increases the number of plants measured  | ↑ Statistical robustness and ↑ genetic variance |
+| Early selection                          | Genetic correlation between traits (e.g., root angle ↔ resilience) or early evaluation (e.g., disease resistance) |
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Fenômica como nova ferramenta para ganho genético
+# Phenomics as a New Tool for Genetic Gain
 
-- **Aumentar a acurácia da seleção** (melhora \(r_a\) na Breeder’s Equation)
-
---
-
-- **Seleção precoce** de plantas promissoras por seleção indireta e correlação genética entre traits
+- **Increase selection accuracy** (improves \(r_a\) in the Breeder’s Equation)
 
 --
 
-- **Detecção precoce de doenças e estresses** antes de sintomas visíveis
+- **Early selection** of promising plants through indirect selection and genetic correlations
 
 --
 
-- **Uso de traits secundários** correlacionados ao trait principal
+- **Early detection of diseases and stresses** before visible symptoms
 
 --
 
-- **Predição multi-fenótipo** combinando traits primários e secundários
+- **Use of secondary traits** correlated with the main trait
 
 --
 
-- **Integração com seleção genômica** (GS + Phenomics = ↑ ganho genético)
+- **Multi-trait prediction** combining primary and secondary traits
 
 --
 
-- **Estudos de interação genótipo × ambiente (G×E)** em grande escala
+- **Integration with genomic selection** (GS + Phenomics = ↑ genetic gain)
 
 --
 
-- **Redução de custo por dado** em comparação à fenotipagem manual
+- **Large-scale genotype × environment (G×E) studies**
+
+--
+
+- **Lower cost per data point** compared to manual phenotyping
 
 
 ---
-# Potencial Redução de Custo
+# Potential Cost Reduction
 
-- **Investimento inicial alto** em sensores e infraestrutura
-
---
-
-- **Plataformas de baixo custo** permitem coleta em larga escala
+- **High initial investment** in sensors and infrastructure
 
 --
 
-- **<span style="color:red; font-weight:bold;">Custo por dado cai drasticamente com o aumento da escala!</span>**
+- **Low-cost platforms** allow large-scale data collection
 
 --
 
-- **Automação** reduz custos de mão de obra 
+- **<span style="color:red; font-weight:bold;">Cost per data point drops drastically as scale increases!</span>**
 
 --
 
-- **Não há custo com reagentes**  
+- **Automation** reduces labor costs
+
+--
+
+- **No reagent costs**  
 
 ---
 class: animate__animated, animate__fadeIn
-# Fenômica vs Genômica
+# Phenomics vs Genomics
 
 <div style="transform: scale(0.75); transform-origin: top center;">
 
 <table style="width:100%; border-collapse: collapse;">
   <thead>
     <tr>
-      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Aspecto</th>
-      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Seleção Genômica (GS)</th>
-      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Seleção Fenômica (Phenomics/HTP)</th>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Aspect</th>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Genomic Selection (GS)</th>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Phenomics / HTP</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Base da predição</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Marcadores moleculares (SNPs)</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Traits fenotípicos de alta resolução</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Prediction basis</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Molecular markers (SNPs)</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">High-resolution phenotypic traits</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Efeitos estimados</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Genéticos, principalmente aditivos</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Variância fenotípica; pode incluir efeitos ambientais e superestimação da acurácia em CV e validação</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Estimated effects</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Genetic, mainly additive</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Phenotypic variance; may include environmental effects and possible overestimation of accuracy in CV and validation</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Momento de aplicação</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Pode ser feita <b>antes da avaliação de campo</b></td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Necessita plantas em crescimento</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">When applied</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Can be done <b>before field evaluation</b></td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Requires growing plants</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Acurácia</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Depende da população de treinamento, anos, tamanho do painel</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Alta em <b>traits fisiológicos e estruturais</b></td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Accuracy</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Depends on training population, years, panel size</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">High for <b>physiological and structural traits</b></td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Custo por indivíduo</td>
-      <td style="border: 1px solid #ddd; padding: 6px;"><b>Médio</b>: Laboratório + reagentes</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Alto custo inicial, <b>cai com escala</b>, sem custo de reagentes</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Cost per individual</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Medium</b>: Laboratory + reagents</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">High initial cost, <b>drops with scale</b>, no reagent cost</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Velocidade do ciclo</td>
-      <td style="border: 1px solid #ddd; padding: 6px;"><b>Muito rápida</b>, permite seleção antecipada</td>
-      <td style="border: 1px solid #ddd; padding: 6px;"><b>Rápida</b>, mas depende do estágio fenológico</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Cycle speed</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Very fast</b>, enables early selection</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Fast</b>, but depends on phenological stage</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 6px;">Traits</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Predição apenas de traits conhecidos</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Inferência de novos traits fisiológicos e estruturais</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Prediction only for known traits</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Inference of new physiological and structural traits</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Integração ideal</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Ideal integration</td>
       <td colspan="2" style="border: 1px solid #ddd; padding: 6px;">
-        <b>GS + Phenomics → Integração Multi-ômica:</b> Aumenta acurácia, robustez e ganho genético.
+        <b>GS + Phenomics → Multi-omics Integration:</b> Increases accuracy, robustness, and genetic gain.
       </td>
     </tr>
   </tbody>
@@ -180,65 +176,66 @@ class: animate__animated, animate__fadeIn
 ---
 class: animate__animated, animate__fadeIn, inverse, center, middle
 
-# Estudo de Caso: Integrando Genômica e Fenotipagem de Alto Rendimento na Interação Genótipo × Bactérias Promotoras de Crescimento
+# Case Study: Integrating Genomics and High-Throughput Phenomics in the Genotype × Plant Growth-Promoting Bacteria Interaction
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Materiais e Métodos
+# Materials and Methods
 
-+ Condições de estufa  
-+ Estágio inicial de desenvolvimento do milho (seis folhas totalmente expandidas)  
-+ 360 linhagens endogâmicas  
-+ 13.826 SNPs  
-+ Dois manejos, ambos sob condição de nitrogênio limitado:  
-  - **B+** População sintética de 4 BPGP (Bactérias Promotoras de Crescimento de Plantas):  
++ Greenhouse conditions  
++ Early maize development stage (six fully expanded leaves)  
++ 360 inbred lines  
++ 13,826 SNPs  
++ Two managements, both under nitrogen limitation:  
+  - **B+** Synthetic population of 4 PGPR (Plant Growth-Promoting Rhizobacteria):  
       * *Bacillus thuringiensis* RZ2MS9  
       * *Delftia* sp. RZ4MS18  
       * *Pantoea agglomerans* 33.1  
       * *Azospirillum brasilense* Ab-v5  
-  - **B-** Sem BPGP  
-+ 2 repetições  
-+ Total de 1.512 parcelas
+  - **B-** Without PGPR  
++ 2 replicates  
++ Total of 1,512 plots
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Por que usar Fenotipagem de Alto Rendimento?
+# Why Use High-Throughput Phenotyping?
 ```{r, echo=FALSE, out.width="85%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/HTP.png")
 ```
+  
 ---
 
 class: animate__animated, animate__fadeIn
 
-# Uma plataforma de fenotipagem de alto rendimento em estufa de baixo custo
+# A Low-Cost Greenhouse High-Throughput Phenotyping Platform
 
 ```{r, echo=FALSE, out.width="75%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/Screen Shot 2022-01-05 at 7.54.52 PM.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Representação da plataforma de Fenotipagem de Alto Rendimento de baixo custo.
+Figure. Representation of the low-cost High-Throughput Phenotyping platform.
 </p>
 
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Coleta de Imagens Termais e Multiespectrais
+# Thermal and Multispectral Image Collection
 
 ```{r  , echo=FALSE, fig.show = "hold", out.width = "50%", fig.align = "default"}
 knitr::include_graphics("figs/RGB_colection.gif")
 knitr::include_graphics("figs/thermal_coletion.gif")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Representação da aquisição de imagens RGB (esquerda) e termais (direita) usando a plataforma de FAR (Fenotipagem de Alto Rendimento) de baixo custo.
+Figure. Representation of RGB (left) and thermal (right) image acquisition using the low-cost High-Throughput Phenotyping (HTP) platform.
 </p>
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Aquisição de Dados
+# Data Acquisition
 
 ```{r, echo=FALSE, out.width="90%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/HTP/fig01.png")
@@ -249,13 +246,13 @@ Figure. Design of the greenhouse-based high-throughput phenotyping platform.
 
 ---
 class: animate__animated, animate__fadeIn
-# Aquisição de Imagens Hiperespectrais
+# Hyperspectral Image Acquisition
 
 ```{r, echo=FALSE, out.width="90%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/fig01_da.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Resumo da aquisição e processamento de dados. A) câmera hiperespectral de bancada usada para coleta de dados; B) região de interesse da última folha expandida; C) imagem em cubo; e D) máscara da imagem.
+Figure. Summary of data acquisition and processing. A) benchtop hyperspectral camera used for data collection; B) region of interest of the last fully expanded leaf; C) image cube; and D) image mask.
 </p>
 
 ---
@@ -266,7 +263,7 @@ class: animate__animated, animate__fadeIn
 knitr::include_graphics("figs/fig02.png")
 ```
 <p style="font-family: times, serif; font-size:10pt; font-style:italic">
-Figura. Resumo do processamento de imagens multiespectrais. (A) aquisição de imagens; (B) montagem do ortomosaico; (C) recorte das parcelas; (D) cobertura do dossel (CC); (E) nuvem de pontos densa; (F) a altura das plantas (PH) foi calculada com base nas diferenças entre a nuvem de pontos densa com as plantas e a nuvem de pontos densa apenas com o vaso; (G) nuvem de pontos densa após aplicação do filtro para remover o fundo; (H) nuvem de pontos densa para cada parcela; (I) reconstrução 3D da nuvem de pontos densa para obtenção do volume do dossel; e (J) f(biomassa) obtida pelo produto da altura da planta (PH) e CC.
+Figure. Summary of multispectral image processing. (A) image acquisition; (B) orthomosaic assembly; (C) plot clipping; (D) canopy cover (CC); (E) dense point cloud; (F) plant height (PH) calculated from differences between the dense point cloud with plants and the dense point cloud with only the pot; (G) dense point cloud after applying a filter to remove the background; (H) dense point cloud for each plot; (I) 3D reconstruction of the dense point cloud to obtain canopy volume; and (J) f(biomass) obtained from the product of plant height (PH) and CC.
 </p>
 
 ---
@@ -284,7 +281,7 @@ class: animate__animated, animate__fadeIn
 knitr::include_graphics("figs/mol_1.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Predição genômica usando GBLUP, GBLUP_GMS (GBLUP baseado na seleção de marcadores via GWAS) e GBLUP_MAS (GBLUP + seleção assistida por marcadores) para diversos traits e manejos.
+Figure. Genomic prediction using GBLUP, GBLUP_GMS (GBLUP based on marker selection via GWAS), and GBLUP_MAS (GBLUP + marker-assisted selection) for various traits and managements.
 </p>
 
 ---
@@ -294,14 +291,14 @@ knitr::include_graphics("figs/TPPJ.png")
 ```
 
 ---
-# Crescimento de Plantas
+# Plant Growth
 ```{r, echo=FALSE, out.width="65%", fig.align="center"}
 knitr::include_graphics("figs/PG.png")
 ```
 ---
 class: animate__animated, animate__fadeIn
 
-# Correlações Fenotípicas e Genômicas
+# Phenotypic and Genomic Correlations
 ```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/table1.png")
 ```
@@ -313,23 +310,23 @@ knitr::include_graphics("figs/CS.png")
 ```
 ---
 class: animate__animated, animate__fadeIn
-# Classificação da Inoculação com Bactérias Promotoras de Crescimento de Plantas
+# Classification of Inoculation with Plant Growth-Promoting Bacteria
 ```{r, echo=FALSE, out.width="50%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/1-3.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Acurácia da classificação do status de inoculação (B+ e B-) usando 150 bandas hiperespectrais.
+Figure. Classification accuracy of inoculation status (B+ and B−) using 150 hyperspectral bands.
 </p>
 
 ---
 class: animate__animated, animate__fadeIn
-# Predição Genômica, Fenômica e Multi-ômica
+# Genomic, Phenomic, and Multi-omics Prediction
 
 ```{r, echo=FALSE, out.width="80%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/1-4.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Capacidade preditiva da altura de planta (PH), diâmetro do colmo (SD) e massa seca da parte aérea (SDM) utilizando modelos de predição fenômica, genômica e multi-ômica em cada condição de manejo (B+ e B-).
+Figure. Predictive ability of plant height (PH), stem diameter (SD), and shoot dry mass (SDM) using phenomic, genomic, and multi-omics prediction models under each management condition (B+ and B−).
 </p>
 
 ---
@@ -344,7 +341,7 @@ class: animate__animated, animate__fadeIn
 knitr::include_graphics("figs/2-6.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. PheWAS para os 10 SNPs de maior frequência em modelos para altura de planta (PH), diâmetro do colmo (SD) e massa seca da parte aérea (SDM) sob manejo B+.
+Figure. PheWAS for the 10 most frequent SNPs in models for plant height (PH), stem diameter (SD), and shoot dry mass (SDM) under B+ management.
 </p>
 ---
 class: animate__animated, animate__fadeIn
@@ -353,42 +350,39 @@ class: animate__animated, animate__fadeIn
 knitr::include_graphics("figs/2.gif")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. GWAS multi-fenótipo para os 281 fenótipos hiperespectrais sob manejo B+.
+Figure. Multi-phenotype GWAS for the 281 hyperspectral phenotypes under B+ management.
 </p>
 
 ---
 class: animate__animated, animate__fadeIn
-# Câmera Termal na Identificação de Doenças
+# Thermal Camera in Disease Identification
 ```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/758CFDF0-42F4-4FEB-ACC0-44973111C347.JPG")
 ```
 
 ---
 class: animate__animated, animate__fadeIn
-# Câmera Termal na Identificação de Doenças
+# Thermal Camera in Disease Identification
 ```{r, echo=FALSE, out.width="120%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/plot_temp.png")
 ```
-<p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. GWAS multi-fenótipo para os 281 fenótipos hiperespectrais sob manejo B+.
-</p>
 
 
 ---
 class: animate__animated, animate__fadeIn, inverse, center, middle
 
-# Fatores que Influenciam a Acurácia, Aplicações e Limitações da Metodologia
+# Factors Influencing Accuracy, Applications, and Limitations of the Methodology
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Geração de Ortomosaicos Utilizando Imagens com Resolução Limitada
+# Generation of Orthomosaics Using Limited-Resolution Images
 
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("figs/problem/Screen Shot 2022-01-05 at 9.05.27 PM.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Diversas tentativas de montagem de ortomosaico e junção (stitching de imagens) com imagens termais.
+Figure. Several attempts at orthomosaic assembly and image stitching using thermal images.
 </p>
 ---
 class: animate__animated, animate__fadeIn
@@ -398,109 +392,110 @@ class: animate__animated, animate__fadeIn
 knitr::include_graphics("figs/problem/1.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Representação de diferentes shapefiles.
+Figure. Representation of different shapefiles.
 </p>
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Geração de Shapefiles e Delimitação das Parcelas
+# Generation of Shapefiles and Plot Delimitation
 ```{r, echo=FALSE, out.width="199%", fig.align="center"}
 knitr::include_graphics("figs/problem/2.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Representação de diferentes shapefiles.
+Figure. Representation of different shapefiles.
 </p>
 ---
 class: animate__animated, animate__fadeIn
 
-# Geração de Shapefiles e Delimitação das Parcelas
+# Generation of Shapefiles and Plot Delimitation
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("figs/problem/3.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Representação de diferentes shapefiles.
+Figure. Representation of different shapefiles.
 </p>
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Geração de Shapefiles e Delimitação das Parcelas
+# Generation of Shapefiles and Plot Delimitation
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("figs/problem/4.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Representação de diferentes shapefiles.
+Figure. Representation of different shapefiles.
 </p>
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Geração de Shapefiles e Delimitação das Parcelas
+# Generation of Shapefiles and Plot Delimitation
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("figs/problem/4.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figura. Representação de diferentes shapefiles.
+Figure. Representation of different shapefiles.
 </p>
 
 ---
 class: animate__animated, animate__fadeIn
 
-#  Fatores que Impactam a Acurácia da Fenotipagem de Alto Rendimento
+# Factors Impacting the Accuracy of High-Throughput Phenotyping
 
 <div style="transform: scale(0.75); transform-origin: top center;">
 
-| **Fator**                       | **Descrição**                                                             |
-| :------------------------------ | :------------------------------------------------------------------------ |
-| **Qualidade do Sensor**          | Sensores de maior resolução capturam dados mais detalhados                 |
-| **Condições Ambientais**         | Clima, iluminação e variações de temperatura afetam a acurácia             |
-| **Diversidade Fenotípica**       | Maior variabilidade genética das plantas pode gerar medições mais complexas |
-| **Processamento de Dados**       | Qualidade do filtro, normalização e algoritmos de análise dos dados        |
-| **Calibração**                   | Calibração adequada dos sensores garante consistência e reduz erros        |
-| **Densidade de Amostragem**      | Amostragens mais frequentes melhoram a resolução temporal                  |
-| **Fusão de Dados**               | Combinar múltiplos tipos de sensores aumenta a acurácia na detecção de traits |
-| **Estabilidade da Plataforma**   | Plataformas fixas geram dados mais consistentes e confiáveis               |
-| **Experiência do Usuário**       | Conhecimento sobre operação e interpretação influencia na confiabilidade   |
+| **Factor**                  | **Description**                                                                 |
+| :-------------------------- | :------------------------------------------------------------------------------ |
+| **Sensor Quality**          | Higher-resolution sensors capture more detailed data                            |
+| **Environmental Conditions**| Climate, lighting, and temperature variations affect accuracy                    |
+| **Phenotypic Diversity**    | Greater genetic variability in plants can generate more complex measurements     |
+| **Data Processing**         | Quality of filtering, normalization, and data analysis algorithms                |
+| **Calibration**             | Proper calibration of sensors ensures consistency and reduces errors             |
+| **Sampling Density**        | More frequent sampling improves temporal resolution                              |
+| **Data Fusion**             | Combining multiple sensor types increases accuracy in trait detection            |
+| **Platform Stability**      | Fixed platforms produce more consistent and reliable data                        |
+| **User Expertise**          | Knowledge of operation and interpretation influences reliability                 |
 
 
 ---
 class: animate__animated, animate__fadeIn
 
-# Desafios Atuais
+# Current Challenges
 
 <div style="transform: scale(0.70); transform-origin: top left; overflow: auto;width: 150%; height: 100%">
 
-| **Tipo de Desafio**        | **Desafios Técnicos**                                       | **Desafios Biológicos**                                    |
-| :------------------------- | :--------------------------------------------------------- | :-------------------------------------------------------- |
-| **Altos Custos**           | Equipamentos caros, especialmente sensores avançados       | Tornar os sensores mais acessíveis para uso amplo         |
-| **Armazenamento de Dados** | Grandes volumes de dados exigem armazenamento e processamento robustos | Transformar dados em informações úteis para o melhoramento genético |
-| **Calibração**             | Dificuldades de calibração de sensores devido a variáveis ambientais | Padronizar traits biológicos em espécies vegetais diversas |
-| **Acurácia**               | Variação no desempenho dos sensores em diferentes condições ambientais | A variabilidade biológica entre espécies pode afetar a consistência dos dados |
-| **Integração de Dados**    | Dificuldade em integrar dados de múltiplos tipos de sensores | Combinar dados fenotípicos e genéticos para melhores predições |
-| **Análise em Tempo Real**  | Necessidade de processar grandes volumes de dados em tempo real | Complexidade de analisar processos biológicos dinâmicos em tempo real |
-| **Limitações da Plataforma** | Restrições de mobilidade e acessibilidade das plataformas | Adaptação dos métodos de fenotipagem para diferentes culturas e estágios de crescimento |
-| **Escalabilidade**         | Dificuldade em escalar HTP para grandes áreas ou múltiplas espécies | Garantir relevância biológica em larga escala e em diferentes ecossistemas |
-| **Integração ao Melhoramento** | Definir estratégias de melhoramento para correlação moderada com o trait-alvo |                                                          |
+| **Challenge Type**       | **Technical Challenges**                                        | **Biological Challenges**                                 |
+| :----------------------- | :-------------------------------------------------------------- | :------------------------------------------------------- |
+| **High Costs**           | Expensive equipment, especially advanced sensors                | Making sensors more accessible for broad use             |
+| **Data Storage**         | Large data volumes require robust storage and processing        | Turning data into useful information for plant breeding  |
+| **Calibration**          | Difficulties calibrating sensors due to environmental variables | Standardizing biological traits across different species |
+| **Accuracy**             | Variation in sensor performance under different environments    | Biological variability between species may affect data consistency |
+| **Data Integration**     | Difficulty integrating data from multiple sensor types           | Combining phenotypic and genetic data for better predictions |
+| **Real-Time Analysis**   | Need to process large data volumes in real time                  | Complexity of analyzing dynamic biological processes in real time |
+| **Platform Limitations** | Constraints in mobility and accessibility of platforms           | Adapting phenotyping methods to different crops and growth stages |
+| **Scalability**          | Difficulty scaling HTP to large areas or multiple species        | Ensuring biological relevance at scale and across ecosystems |
+| **Breeding Integration** | Defining breeding strategies when correlation with target trait is moderate |                                                          |
+
 ---
 class: animate__animated, animate__fadeIn
 
-# Em Poucas Palavras
+# In a Nutshell
 
-- Fenômica amplia o ganho genético ao aumentar acurácia e reduzir custos  
+- Phenomics increases genetic gain by improving accuracy and reducing costs  
 
-- Tecnologias acessíveis permitem uso em larga escala, mesmo com orçamento restrito  
+- Affordable technologies allow large-scale use, even with limited budgets  
 
-- Integração com genômica é o futuro: mais robustez, mais eficiência  
+- Integration with genomics is the future: more robustness, more efficiency  
 
-- Estratégias de melhoramento para maximizar a acurácia dos modelos de fenômica
+- Breeding strategies to maximize the accuracy of phenomics models  
 
-- Multi-ômica → chave para próxima geração de melhoramento
+- Multi-omics → the key to next-generation breeding
 
 ---
 class: animate__animated, animate__fadeIn, middle
 
-# Agradecimentos 
+# Acknowledgments 
 
 ```{r, echo=FALSE, out.width="100%", fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/plot.jpg")
