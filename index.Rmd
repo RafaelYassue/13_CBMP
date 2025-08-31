@@ -23,9 +23,10 @@ class: animate__animated, animate__fadeIn, has-logo
 # Outline
 
 1. Phenomics and Genetic Gain  
-2. Phenomics vs. Genomics  
-3. Case Studies  
+2. Case Studies  
+3. Phenomics vs. Genomics  
 4. Applications, Limitations, and Challenges
+5. Phenomics Data Flow:
 
 ---
 class: animate__animated, animate__fadeIn
@@ -45,133 +46,64 @@ $$
 
 --
 
-<div style="transform: scale(0.75); transform-origin: top center;">
 
-| **How Phenomics Increases Genetic Gain** | **Effect on Genetic Gain** |
-| :--------------------------------------- | :-------------------------- |
-| Reduces experimental error               | ↑ Heritability → ↑ Accuracy |
-| Enables repeated temporal measurements   | ↑ Precision of estimates    |
-| Increases the number of plants measured  | ↑ Statistical robustness and ↑ genetic variance |
-| Early selection                          | Genetic correlation between traits (e.g., root angle ↔ resilience) or early evaluation (e.g., disease resistance) |
+```{r, echo=FALSE, out.width="110%",fig.cap="", fig.align="center",warning = FALSE, message = FALSE}
+
+library(tibble)
+library(dplyr)
+library(kableExtra)
+tbl <- tribble(
+  ~Component, ~`How Phenomics Increases Genetic Gain`, ~`Effect on Genetic Gain`,
+  "$i, r_{a}$",  "Reduces experimental error", "↑ Heritability → ↑ Accuracy",
+  "$i, r_{a}$",  "Enables repeated temporal measurements", "↑ Precision of estimates",
+  "$\\sigma_{a}$", "Increases the number of plants measured", "↑ Statistical robustness and ↑ genetic variance",
+  "$L$", "Early selection", "Genetic correlation between traits (e.g., root angle ↔ resilience) or early evaluation (e.g., disease resistance)"
+)
+
+# Renderizar com estilo
+tbl %>%
+  kable("html", escape = FALSE, align = "c") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"),
+    full_width = FALSE, 
+    position = "center", 
+    font_size = 14
+  ) %>%
+  column_spec(1, bold = TRUE, width = "5em") %>%
+  column_spec(2, width = "20em") %>%
+  column_spec(3, width = "20em")
+
+```
+
+
 
 ---
 class: animate__animated, animate__fadeIn
+name: phenomics-combined
 
-# Phenomics as a New Tool for Genetic Gain
+# Phenomics: More Genetic Gain, Lower Cost
 
-- **Increase selection accuracy** (improves \(r_a\) in the Breeder’s Equation)
-
---
-
-- **Early selection** of promising plants through indirect selection and genetic correlations
-
---
-
-- **Early detection of diseases and stresses** before visible symptoms
-
---
-
+.pull-left[
+.incremental[
+- **Increase selection accuracy** (improves \(r_{a}\) in the Breeder’s Equation)
+- **Early selection** via indirect selection & genetic correlations
+- **Early detection** of diseases/stresses before visible symptoms
 - **Use of secondary traits** correlated with the main trait
-
---
-
-- **Multi-trait prediction** combining primary and secondary traits
-
---
-
+- **Multi-trait prediction** (primary + secondary traits)
 - **Integration with genomic selection** (GS + Phenomics = ↑ genetic gain)
+- **Large-scale G×E studies**
+]
+]
 
---
-
-- **Large-scale genotype × environment (G×E) studies**
-
---
-
-- **Lower cost per data point** compared to manual phenotyping
-
-
----
-# Potential Cost Reduction
-
-- **High initial investment** in sensors and infrastructure
-
---
-
-- **Low-cost platforms** allow large-scale data collection
-
---
-
+.pull-right[
+.incremental[
+- **High initial investment** in sensors & infrastructure
+- **Low-cost platforms** enable large-scale data capture
 - **<span style="color:red; font-weight:bold;">Cost per data point drops drastically as scale increases!</span>**
-
---
-
 - **Automation** reduces labor costs
-
---
-
-- **No reagent costs**  
-
----
-class: animate__animated, animate__fadeIn
-# Phenomics vs Genomics
-
-<div style="transform: scale(0.75); transform-origin: top center;">
-
-<table style="width:100%; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Aspect</th>
-      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Genomic Selection (GS)</th>
-      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Phenomics / HTP</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Prediction basis</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Molecular markers (SNPs)</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">High-resolution phenotypic traits</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Estimated effects</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Genetic, mainly additive</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Phenotypic variance; may include environmental effects and possible overestimation of accuracy in CV and validation</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">When applied</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Can be done <b>before field evaluation</b></td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Requires growing plants</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Accuracy</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Depends on training population, years, panel size</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">High for <b>physiological and structural traits</b></td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Cost per individual</td>
-      <td style="border: 1px solid #ddd; padding: 6px;"><b>Medium</b>: Laboratory + reagents</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">High initial cost, <b>drops with scale</b>, no reagent cost</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Cycle speed</td>
-      <td style="border: 1px solid #ddd; padding: 6px;"><b>Very fast</b>, enables early selection</td>
-      <td style="border: 1px solid #ddd; padding: 6px;"><b>Fast</b>, but depends on phenological stage</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Traits</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Prediction only for known traits</td>
-      <td style="border: 1px solid #ddd; padding: 6px;">Inference of new physiological and structural traits</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 6px;">Ideal integration</td>
-      <td colspan="2" style="border: 1px solid #ddd; padding: 6px;">
-        <b>GS + Phenomics → Multi-omics Integration:</b> Increases accuracy, robustness, and genetic gain.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-
+- **No reagent costs**
+]
+]
 
 ---
 class: animate__animated, animate__fadeIn, inverse, center, middle
@@ -371,7 +303,70 @@ knitr::include_graphics("figs/plot_temp.png")
 ---
 class: animate__animated, animate__fadeIn, inverse, center, middle
 
-# Factors Influencing Accuracy, Applications, and Limitations of the Methodology
+# Applications, Factors Influencing Accuracy, and Limitations of the Methodology
+
+---
+
+class: animate__animated, animate__fadeIn
+# Phenomics vs Genomics
+
+<div style="transform: scale(0.75); transform-origin: top center;">
+
+<table style="width:100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Aspect</th>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Genomic Selection (GS)</th>
+      <th style="border: 1px solid #ddd; padding: 6px; text-align: left;">Phenomics / HTP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Prediction basis</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Molecular markers (SNPs)</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">High-resolution phenotypic traits</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Estimated effects</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Genetic, mainly additive</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Phenotypic variance; may include environmental effects and possible overestimation of accuracy in CV and validation</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">When applied</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Can be done <b>before field evaluation</b></td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Requires growing plants</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Accuracy</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Depends on training population, years, panel size</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">High for <b>physiological and structural traits</b></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Cost per individual</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Medium</b>: Laboratory + reagents</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">High initial cost, <b>drops with scale</b>, no reagent cost</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Cycle speed</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Very fast</b>, enables early selection</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>Fast</b>, but depends on phenological stage</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Traits</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Prediction only for known traits</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">Inference of new physiological and structural traits</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">Ideal integration</td>
+      <td colspan="2" style="border: 1px solid #ddd; padding: 6px;">
+        <b>GS + Phenomics → Multi-omics Integration:</b> Increases accuracy, robustness, and genetic gain.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
 
 ---
 class: animate__animated, animate__fadeIn
@@ -476,11 +471,21 @@ class: animate__animated, animate__fadeIn
 | **Platform Limitations** | Constraints in mobility and accessibility of platforms           | Adapting phenotyping methods to different crops and growth stages |
 | **Scalability**          | Difficulty scaling HTP to large areas or multiple species        | Ensuring biological relevance at scale and across ecosystems |
 | **Breeding Integration** | Defining breeding strategies when correlation with target trait is moderate |                                                          |
+---
+class: animate__animated, animate__fadeIn
+
+# Phenomics Data Flow:
+
+```{r, echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("figs/workflow.png")
+```
+
+
 
 ---
 class: animate__animated, animate__fadeIn
 
-# In a Nutshell
+# In essence
 
 - Phenomics increases genetic gain by improving accuracy and reducing costs  
 
