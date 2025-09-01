@@ -108,7 +108,7 @@ name: phenomics-combined
 ---
 class: animate__animated, animate__fadeIn, inverse, center, middle
 
-# Case Study: Integrating Genomics and High-Throughput Phenomics in the Genotype × Plant Growth-Promoting Bacteria Interaction
+# Case Study: Integrating Genomics and High-Throughput Phenotyping in the Genotype × Plant Growth-Promoting Bacteria Interaction
 
 ---
 class: animate__animated, animate__fadeIn
@@ -176,16 +176,6 @@ knitr::include_graphics("figs/HTP/fig01.png")
 Figure. Design of the greenhouse-based high-throughput phenotyping platform.
 </p>
 
----
-class: animate__animated, animate__fadeIn
-# Hyperspectral Image Acquisition
-
-```{r, echo=FALSE, out.width="90%",fig.cap="", fig.align="center"}
-knitr::include_graphics("figs/fig01_da.png")
-```
-<p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figure. Summary of data acquisition and processing. A) benchtop hyperspectral camera used for data collection; B) region of interest of the last fully expanded leaf; C) image cube; and D) image mask.
-</p>
 
 ---
 class: animate__animated, animate__fadeIn
@@ -198,6 +188,29 @@ knitr::include_graphics("figs/fig02.png")
 Figure. Summary of multispectral image processing. (A) image acquisition; (B) orthomosaic assembly; (C) plot clipping; (D) canopy cover (CC); (E) dense point cloud; (F) plant height (PH) calculated from differences between the dense point cloud with plants and the dense point cloud with only the pot; (G) dense point cloud after applying a filter to remove the background; (H) dense point cloud for each plot; (I) 3D reconstruction of the dense point cloud to obtain canopy volume; and (J) f(biomass) obtained from the product of plant height (PH) and CC.
 </p>
 
+
+---
+class: animate__animated, animate__fadeIn
+```{r, echo=FALSE, out.width="120%",fig.cap="", fig.align="center"}
+knitr::include_graphics("figs/TPPJ.png")
+```
+
+---
+# Plant Growth
+```{r, echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("figs/PG.png")
+```
+<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+Figure. Growth patterns of genotypes across maize development with (B+) or without (B–) plant growth-promoting bacteria inoculation. The blue and red dashed lines represent the means of B+ and B– managements, respectively. 
+</p>
+
+---
+class: animate__animated, animate__fadeIn
+
+# Phenotypic and Genomic Correlations
+```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
+knitr::include_graphics("figs/table1.png")
+```
 ---
 class: animate__animated, animate__fadeIn
 
@@ -210,30 +223,35 @@ knitr::include_graphics("figs/molbreed.png")
 class: animate__animated, animate__fadeIn
 # Multi-phenotype Genomic prediction
 ```{r, echo=FALSE, out.width="70%",fig.cap="", fig.align="center"}
+knitr::include_graphics("figs/MB/temp.png")
+```
+<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+Figure. Distribution of the significant SNPs from the GWAS analysis across the chromosomes for eleven traits and treatments (B+, B−, Delta).
+</p>
+
+
+
+---
+class: animate__animated, animate__fadeIn
+# Multi-phenotype Genomic prediction
+```{r, echo=FALSE, out.width="70%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/mol_1.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
 Figure. Genomic prediction using GBLUP, GBLUP_GMS (GBLUP based on marker selection via GWAS), and GBLUP_MAS (GBLUP + marker-assisted selection) for various traits and managements.
 </p>
 
----
-class: animate__animated, animate__fadeIn
-```{r, echo=FALSE, out.width="120%",fig.cap="", fig.align="center"}
-knitr::include_graphics("figs/TPPJ.png")
-```
 
 ---
-# Plant Growth
-```{r, echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("figs/PG.png")
-```
----
 class: animate__animated, animate__fadeIn
+# Hyperspectral Image Acquisition
 
-# Phenotypic and Genomic Correlations
-```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
-knitr::include_graphics("figs/table1.png")
+```{r, echo=FALSE, out.width="90%",fig.cap="", fig.align="center"}
+knitr::include_graphics("figs/fig01_da.png")
 ```
+<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+Figure. Summary of data acquisition and processing. A) benchtop hyperspectral camera used for data collection; B) region of interest of the last fully expanded leaf; C) image cube; and D) image mask.
+</p>
 
 ---
 class: animate__animated, animate__fadeIn
