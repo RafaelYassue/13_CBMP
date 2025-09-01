@@ -84,11 +84,16 @@ name: phenomics-combined
 # Phenomics: More Genetic Gain, Lower Cost
 
 - **Use of secondary traits** correlated with the main trait
+
 - **High initial investment** in sensors & infrastructure
+
 - **Low-cost platforms** enable large-scale data capture
-- **<span style="color:red; font-weight:bold;">Cost per data point drops drastically as scale increases!</span>**
+
 - **Automation** reduces labor costs
+
 - **No reagent costs**
+
+- **<span style="color:red; font-weight:bold;">Cost per data point drops drastically as scale increases!</span>**
 
 ---
 class: animate__animated, animate__fadeIn, inverse, center, middle
