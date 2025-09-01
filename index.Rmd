@@ -85,13 +85,23 @@ name: phenomics-combined
 
 - **Use of secondary traits** correlated with the main trait
 
+--
+
 - **High initial investment** in sensors & infrastructure
+
+--
 
 - **Low-cost platforms** enable large-scale data capture
 
+--
+
 - **Automation** reduces labor costs
 
+--
+
 - **No reagent costs**
+
+--
 
 - **<span style="color:red; font-weight:bold;">Cost per data point drops drastically as scale increases!</span>**
 
