@@ -412,7 +412,7 @@ Figure. Representation of different shapefiles.
 class: animate__animated, animate__fadeIn
 
 # Generation of Shapefiles and Plot Delimitation
-```{r, echo=FALSE, out.width="199%", fig.align="center"}
+```{r, echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("figs/problem/2.png")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
@@ -454,6 +454,25 @@ Figure. Representation of different shapefiles.
 ---
 class: animate__animated, animate__fadeIn
 
+# Current Challenges
+
+<div style="transform: scale(0.70); transform-origin: top left; overflow: auto;width: 150%; height: 100%">
+
+| **Challenge Type**       | **Technical Challenges**                                        | **Biological Challenges**                                 |
+| :----------------------- | :-------------------------------------------------------------- | :------------------------------------------------------- |
+| **High Costs**           | Expensive equipment, especially advanced sensors                | Making sensors more accessible for broad use             |
+| **Data Storage**         | Large data volumes require robust storage and processing        | Turning data into useful information for plant breeding  |
+| **Calibration**          | Difficulties calibrating sensors due to environmental variables | Standardizing biological traits across different species |
+| **Accuracy**             | Variation in sensor performance under different environments    | Biological variability between species may affect data consistency |
+| **Data Integration**     | Difficulty integrating data from multiple sensor types           | Combining phenotypic and genetic data for better predictions |
+| **Real-Time Analysis**   | Need to process large data volumes in real time                  | Complexity of analyzing dynamic biological processes in real time |
+| **Platform Limitations** | Constraints in mobility and accessibility of platforms           | Adapting phenotyping methods to different crops and growth stages |
+| **Scalability**          | Difficulty scaling HTP to large areas or multiple species        | Ensuring biological relevance at scale and across ecosystems |
+| **Breeding Integration** | Defining breeding strategies when correlation with target trait is moderate |      
+
+---
+class: animate__animated, animate__fadeIn
+
 # Factors Impacting the Accuracy of High-Throughput Phenotyping
 
 <div style="transform: scale(0.75); transform-origin: top center;">
@@ -470,25 +489,7 @@ class: animate__animated, animate__fadeIn
 | **Platform Stability**      | Fixed platforms produce more consistent and reliable data                        |
 | **User Expertise**          | Knowledge of operation and interpretation influences reliability                 |
 
-
----
-class: animate__animated, animate__fadeIn
-
-# Current Challenges
-
-<div style="transform: scale(0.70); transform-origin: top left; overflow: auto;width: 150%; height: 100%">
-
-| **Challenge Type**       | **Technical Challenges**                                        | **Biological Challenges**                                 |
-| :----------------------- | :-------------------------------------------------------------- | :------------------------------------------------------- |
-| **High Costs**           | Expensive equipment, especially advanced sensors                | Making sensors more accessible for broad use             |
-| **Data Storage**         | Large data volumes require robust storage and processing        | Turning data into useful information for plant breeding  |
-| **Calibration**          | Difficulties calibrating sensors due to environmental variables | Standardizing biological traits across different species |
-| **Accuracy**             | Variation in sensor performance under different environments    | Biological variability between species may affect data consistency |
-| **Data Integration**     | Difficulty integrating data from multiple sensor types           | Combining phenotypic and genetic data for better predictions |
-| **Real-Time Analysis**   | Need to process large data volumes in real time                  | Complexity of analyzing dynamic biological processes in real time |
-| **Platform Limitations** | Constraints in mobility and accessibility of platforms           | Adapting phenotyping methods to different crops and growth stages |
-| **Scalability**          | Difficulty scaling HTP to large areas or multiple species        | Ensuring biological relevance at scale and across ecosystems |
-| **Breeding Integration** | Defining breeding strategies when correlation with target trait is moderate |                                                          |
+                                                    |
 ---
 class: animate__animated, animate__fadeIn
 
