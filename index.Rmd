@@ -1,5 +1,5 @@
 ---
-title: "From Pixel to Insight: How High-Throughput Phenotyping Increases Genetic Gain"
+title: "High-throughput phenotyping applied to plant breeding"
 author:  
   - Rafael Massahiro Yassue
 institute: "GDM Seeds"
@@ -26,7 +26,7 @@ class: animate__animated, animate__fadeIn, has-logo
 2. Case Studies  
 3. Phenomics vs. Genomics  
 4. Applications, Limitations, and Challenges
-5. Phenomics Data Flow:
+5. Phenomics Data Flow
 
 ---
 class: animate__animated, animate__fadeIn
@@ -474,7 +474,7 @@ class: animate__animated, animate__fadeIn
 ---
 class: animate__animated, animate__fadeIn
 
-# Phenomics Data Flow:
+# Phenomics Data Flow
 
 ```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("figs/workflow.png")
