@@ -466,25 +466,6 @@ class: animate__animated, animate__fadeIn
 | **Scalability**          | Difficulty scaling HTP to large areas or multiple species        | Ensuring biological relevance at scale and across ecosystems |
 | **Breeding Integration** | Defining breeding strategies when correlation with target trait is moderate |      
 
----
-class: animate__animated, animate__fadeIn
-
-# Factors Impacting the Accuracy of High-Throughput Phenotyping
-
-<div style="transform: scale(0.75); transform-origin: top center;">
-
-| **Factor**                  | **Description**                                                                 |
-| :-------------------------- | :------------------------------------------------------------------------------ |
-| **Sensor Quality**          | Higher-resolution sensors capture more detailed data                            |
-| **Environmental Conditions**| Climate, lighting, and temperature variations affect accuracy                    |
-| **Phenotypic Diversity**    | Greater genetic variability in plants can generate more complex measurements     |
-| **Data Processing**         | Quality of filtering, normalization, and data analysis algorithms                |
-| **Calibration**             | Proper calibration of sensors ensures consistency and reduces errors             |
-| **Sampling Density**        | More frequent sampling improves temporal resolution                              |
-| **Data Fusion**             | Combining multiple sensor types increases accuracy in trait detection            |
-| **Platform Stability**      | Fixed platforms produce more consistent and reliable data                        |
-| **User Expertise**          | Knowledge of operation and interpretation influences reliability                 |
-
                                                     |
 ---
 class: animate__animated, animate__fadeIn
