@@ -281,26 +281,22 @@ Figure. Predictive ability of plant height (PH), stem diameter (SD), and shoot d
 
 ---
 class: animate__animated, animate__fadeIn
-```{r, echo=FALSE, out.width="100%", fig.align="center"}
-knitr::include_graphics("figs/PD.png")
-```
----
-class: animate__animated, animate__fadeIn
-# Phenome-wide association studies (PheWAS)
-```{r, echo=FALSE, out.width="100%",fig.cap="", fig.align="center"}
-knitr::include_graphics("figs/2-6.png")
-```
-<p style="font-family: times, serif; font-size:11pt; font-style:italic">
-Figure. PheWAS for the 10 most frequent SNPs in models for plant height (PH), stem diameter (SD), and shoot dry mass (SDM) under B+ management.
-</p>
----
-class: animate__animated, animate__fadeIn
 # Multi-phenotype GWAS
 ```{r, echo=FALSE, out.width="70%",fig.cap="", fig.align="center"}
 knitr::include_graphics("figs/2.gif")
 ```
 <p style="font-family: times, serif; font-size:11pt; font-style:italic">
 Figure. Multi-phenotype GWAS for the 281 hyperspectral phenotypes under B+ management.
+</p>
+
+---
+class: animate__animated, animate__fadeIn
+# Phenome-wide association studies (PheWAS)
+```{r, echo=FALSE, out.width="90%",fig.cap="", fig.align="center"}
+knitr::include_graphics("figs/2-6.png")
+```
+<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+Figure. PheWAS for the 10 most frequent SNPs in models for plant height (PH), stem diameter (SD), and shoot dry mass (SDM) under B+ management.
 </p>
 
 ---
